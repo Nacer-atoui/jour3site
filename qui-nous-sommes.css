@@ -20,10 +20,6 @@ header {
     align-items: center;
     padding: 0 2rem;
 }
-.logo {
-    display: flex;
-}
-
 
 
 h2 {
@@ -231,7 +227,23 @@ hr {
     width: 256px;
     height: 144px;
 }
+.partenaires-wrap {
+    margin:  auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    gap: 3rem;
+    margin: 0 auto 4rem;
+}
+.logos-partenaires {
+    width: 256px;
+    height: 144px;
+}
 .certifications {
     background-color: #f6f6f6;
  
+}
+section {
+    margin: 4rem auto;
 }

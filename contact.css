@@ -1,20 +1,15 @@
+body{
+    background-color: white;
+    overflow-x:hidden;
 
-
-/*barre de tete avec logo*/
+}
 header {
-    line-height: 23px;
-    font-weight: 500;
-    top: 0;
+    display: flex;
+    height: 94px;
     background-color: #fff;
-
+    align-items: center;
+    padding: 0 2rem;
 }
-
-img {
-    max-width: 100%;
-
-    margin: 0 auto;
-}
-
 
 
 
@@ -207,7 +202,7 @@ footer {
     padding: 50px 0px;
 
 }
-.logo {
+.logo-footer {
     display: flex;
     width: 75%;
 }
@@ -242,7 +237,7 @@ footer {
 @media only screen and (min-width: 768px) {
 
 .photo {
-    width: 50%;
+    width: 100%;
     margin: 2rem auto;
 }
     footer {
@@ -257,7 +252,7 @@ footer {
     flex-direction: column;
     justify-content: space-around;
 }
-.logo {
+.logo-footer {
     display: flex;
     width: 30%;
 }

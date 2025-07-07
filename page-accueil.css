@@ -1,9 +1,25 @@
+
+
+body{
+    background-color: white;
+    overflow-x:hidden;
+
+}
+header {
+    display: flex;
+    height: 94px;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+} 
 /* dropdown */
 
     .dropdown{
     display: inline-block;
      
 }
+
 .dropdown button{
     background-color: oklab(55.605000000000004% -0.03694 -0.24263);
     color: rgb(0, 0, 0);
@@ -39,20 +55,6 @@
     right: 0; 
     }
 
-   
-
-
-
-/*barre de tete avec logo*/
-header {
-    line-height: 23px;
-    font-weight: 500;
-    top: 0;
-    background-color: #fff;
-
-}
-
-
 
 
 /*texte de présentation et lien cadre bleu*/
@@ -86,13 +88,6 @@ header {
 
 .entete {
     width: 100%;
-}
-
-
-img {
-    max-width: 100%;
-
-    margin: 0 auto;
 }
 
 .imagepres {
