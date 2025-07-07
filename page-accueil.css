@@ -11,14 +11,21 @@
 h1, h2, h3{
     font-family: Google Sans Code;
 }
+
+body{
+    background-color: white;
+    overflow-x:hidden;
+
+}
 header {
     display: flex;
     height: 94px;
     background-color: #fff;
-    justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-} 
+    justify-content: space-between;
+    
+}
 /* dropdown */
 
     .dropdown{
@@ -122,13 +129,6 @@ header {
 .lientext{
     color: #fff;
     
-}
-
-body{
-    background-color: white;
-    margin: 0 0;
-    width: auto;
-    overflow-x:hidden;
 }
 
 .contain-flex {
