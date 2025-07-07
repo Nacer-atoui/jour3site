@@ -1,3 +1,11 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Google Sans Code';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/GoogleSansCode[wght].ttf');
+}
+
 
 body{
     background-color: white;
@@ -53,9 +61,6 @@ header {
 
     right: 0; 
     }
-
-
-
 
 /*texte de présentation et lien cadre bleu*/
 .textelink {
@@ -124,12 +129,6 @@ header {
     
 }
 
-body{
-    background-color: white;
-    margin: 0 0;
-    width: auto;
-    overflow-x:hidden;
-}
 
 .contain-flex {
     display: flex;
@@ -197,7 +196,7 @@ fieldset {
 }
 
 .question {
-    width: 90%;
+    width: 70%;
     margin: 5rem auto;
     color: black;
 }
