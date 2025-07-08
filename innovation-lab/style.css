@@ -253,6 +253,7 @@ section.formations .articles article {
 .skills {
     background-color: black;
     color: white;
+    gap: 1rem;
 }
 
 .skills ul {
