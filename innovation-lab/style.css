@@ -80,11 +80,11 @@ nav {
     top: 8px;
 }
 
-#menu-toggle:checked +.burger .bar {
+#menu-toggle:checked+.burger .bar {
     background-color: transparent;
 }
 
-#menu-toggle:checked +.burger .bar::before {
+#menu-toggle:checked+.burger .bar::before {
     transform: rotate(135deg);
     top: 0;
 }
@@ -189,7 +189,7 @@ section {
     padding: 2rem;
 }
 
-section > p {
+section>p {
     font-size: 24px;
 }
 
@@ -265,6 +265,70 @@ section.formations .articles article {
     line-height: 2rem;
     border-top: 1px solid white;
     padding: 0.5rem 0;
+}
+
+.carousel {
+    margin: 1rem;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.slider article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+    background: #f8f8f8;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #bbb;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.carousel:has(#slide1:target) #dot1,
+.carousel:has(#slide2:target) #dot2,
+.carousel:has(#slide3:target) #dot3,
+.carousel:has(#slide4:target) #dot4 {
+    background-color: black;
+}
+
+.slider .comment {
+    font-size: 33px;
+    line-height: 1.5em;
+    font-style: italic;
+}
+
+.team {
+    gap: 1rem;
 }
 
 @media screen and (max-width: 768px) {

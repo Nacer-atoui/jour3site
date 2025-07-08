@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bootcamp d’innovation interdisciplinaire, de l’analyse d’un problème complexe au prototypage fonctionnel. Des formations gratuites grâce à nos partenaires.">
+    <meta name="description"
+        content="Bootcamp d’innovation interdisciplinaire, de l’analyse d’un problème complexe au prototypage fonctionnel. Des formations gratuites grâce à nos partenaires.">
     <link rel="stylesheet" href="style.css">
     <title>Innovation Lab</title>
 </head>
@@ -129,7 +130,121 @@
             <li>Des projets réalisés à valoriser dans leur portfolio</li>
         </ul>
     </section>
+    <section class="carousel">
+        <h2>Ils témoignent :</h2>
+        <div class="slider">
+            <article id="slide1">
+                <span class="comment">
+                    <i class="fa-solid fa-angles-left"></i>
+                    Le lab a accéléré les rencontres avec des
+                    professionnels que je voulais depuis
+                    longtemps. C'est
+                    une
+                    formidable opportinité de réseaux.
+                    <i class="fa-solid fa-angles-right"></i>
+                </span><br>
+                <div>
+                    <span class="user">Antoine</span><br>
+                    <span class="company">Inovation Lab "Habiter demain"</span>
+                </div>
+            </article>
+            <article id="slide2">
+                <span class="comment">
+                    <i class="fa-solid fa-angles-left"></i>
+                    Le lab, c'était un excellent moment de
+                    transition entre mes études et le monde
+                    professionnel. J'y
+                    ai
+                    trouvé des outils pour compléter ma méthodologie et une façon de poser ma réflexion.
+                    <i class="fa-solid fa-angles-right"></i>
+                </span><br>
+                <div>
+                    <span class="user">Mathilde</span><br>
+                    <span class="company">Inovation Lab "Habiter demain"</span>
+                </div>
+            </article>
+            <article id="slide3">
+                <span class="comment">
+                    <i class="fa-solid fa-angles-left"></i>
+                    Le lab m’a redonné une très confiance en ma
+                    capacité à piloter un projet
+                    d’innovation, il m’a
+                    permis
+                    de
+                    remettre des mots sur mes compétences après une reconversion professionnelle
+                    <i class="fa-solid fa-angles-right"></i>
+                </span><br>
+                <div>
+                    <span class="user">Marion</span><br>
+                    <span class="company">Inovation Lab "Habiter demain"</span>
+                </div>
+            </article>
+            <article id="slide4">
+                <span class="comment">
+                    <i class="fa-solid fa-angles-left"></i>
+                    Grâce au lab Habiter demain, j’ai appris des techniques concrètes pour intégrer les usagers dans mon
+                    travail de designer, ce n’était pas ma façon de faire avant
+                    <i class="fa-solid fa-angles-right"></i>
+                </span><br>
+                <div class="author">
+                    <span class="user">Alban</span><br>
+                    <span class="company">Inovation Lab "Habiter demain"</span>
+                </div>
+            </article>
+        </div>
+        <div class="dots">
+            <a href="#slide1" class="dot" id="dot1"></a>
+            <a href="#slide2" class="dot" id="dot2"></a>
+            <a href="#slide3" class="dot" id="dot3"></a>
+            <a href="#slide4" class="dot" id="dot4"></a>
+        </div>
+    </section>
+    <section class="carousel">
+        <h2>Équipe pédagogique :</h2>
+        <div class="slider team">
+            <figure id="slide5">
+                <img src="https://laplateforme.io/wp-content/uploads/2022/12/sylvia-il-hp.webp" alt="Sylvia Andriantsimahavandy profile">
+                <figcaption>
+                    <p>Sylvia Andriantsimahavandy</p>
+                    <p>Directrice Innovation</p>
+                    <a href="https://www.linkedin.com/in/sylviaandriantsi/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </figcaption>
+            </figure>
+            <figure id="slide6">
+                <img src="https://laplateforme.io/wp-content/uploads/2022/12/tiphaine-il-hp.webp" alt="Tiphaine Pitoiset">
+                <figcaption>
+                    <p>Tiphaine Pitoiset</p>
+                    <p>Responsable formation Habiter demain</p>
+                    <a href="https://www.linkedin.com/in/tiphainepitoiset/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </figcaption>
+            </figure>
+            <figure id="slide7">
+                <img src="https://laplateforme.io/wp-content/uploads/2022/12/vytas-il-hp.webp" alt="Vytas Jankauskas profile">
+                <figcaption>
+                    <p>Vytas Jankauskas</p>
+                    <p>Responsable formation Réseaux sociaux de demain</p>
+                    <a href="https://www.linkedin.com/in/vytas-jankauskas-106494177/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="dots">
+            <a href="#slide5" class="dot" id="dot5"></a>
+            <a href="#slide6" class="dot" id="dot6"></a>
+            <a href="#slide7" class="dot" id="dot7"></a>
+        </div>
+    </section>
     <script src="https://kit.fontawesome.com/cf618d8113.js" crossorigin="anonymous"></script>
+    <script>
+        const slider = document.querySelector(".slider");
+        const dots = document.querySelectorAll(".dot");
+        const articles = document.querySelectorAll(".slider article");
+
+        slider.addEventListener("scroll", () => {
+            const index = Math.round(slider.scrollLeft / slider.offsetWidth);
+            dots.forEach(dot => dot.style.background = "#bbb");
+            dots[index].style.background = "black";
+        });
+    </script>
 </body>
 
 </html>
