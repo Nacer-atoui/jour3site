@@ -1,72 +1,300 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pcodingschool.css">
-    <title>Laplateformecodingschool</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Plateforme - Développement</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="pcodingschool.css" />
 </head>
-
 <body>
-    <section class="banniere-haut">
-        <header>
-            <div class="logo">
-                <img src="logo-laplateforme-2024.png" alt="">
-            </div>
-        </header>
- <div class="dropdown">
-        <button>Qui sommes-nous ?</button>
-        <div class="content">
-            <a class="qui sommes nous" href="https://laplateforme.io/qui-sommes-nous/">Qui sommes nous?</a>
-            <a href="">Nosc ecoles</a>
-            <a href="">Ils parlent de nous</a>
-        </div>
-        
-    </div>
 
-     <div class="dropdown">
-        <button>Extrascolaire?</button>
-        <div class="content">
-            <a class="TUMO Marseille" href="https://laplateforme.io/tumo-marseille/">TUMO Marseille </a>
-            <a href="">Cyberpark</a>
-            <a href="">Stage d'été</a>
-        </div>
-        
-    </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo-laplateforme-2024.png" alt="Logo La Plateforme" />
+      </div>
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="#">Qui sommes-nous ?</a>
+          <ul class="dropdown-content">
+            <li><a href="#">qui nous sommes</a></li>
+            <li><a href="#">ls parlent de nous/a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Extrascolaire</a>
+          <ul class="dropdown-content">
+            <li><a href="#">TUMO Marseille</a></li>
+            <li><a href="#">Cyberpark</a></li>
+            <li><a href="#">Stage d'été</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Formations initiales / alternance</a>
+          <ul class="dropdown-content">
+        <li><a href="#">RE - START -12 MOIS</a></li>
+        <li><a href="#">BACHELOR IT</a></li>
+        <li><a href="#">Master of science </a></li>
+         <li><a href="#">Post graduate</a></li>
+      </ul>
+        <li class="dropdown">
+            <a href="#">Formations continue </a>
+          <ul class="dropdown-content">
+        <li><a href="#">IA et Métiers de l'Image</li>
+        <li><a href="#">IA Générative et Productivité</a></li>
+        <li><a href="#">IIA pour le secteur public</a></li>
+        </ul>
+    </nav>
+  </header>
 
-       <div class="dropdown">
-        <button>Formation initales / alternance </button>
-        <div class="content">
-            <a class="" href=>RE - START -12 MOIS  </a>
-            <a href="">BACHELOR IT   </a>
-            <a href="">Maste of science </a>
-             <a href="">Post graduate</a>
-               
-        </div>
-        
+  <section class="hero">
+    <div class="hero-overlay">
+      <button class="category-btn">Développement</button>
+      <h1>Développement</h1>
+      <h2>de 1 à 3 ans, 3 titres professionnels</h2>
+      <p>
+        La Plateforme propose des cursus de haut niveau destinés à former aux <strong>métiers du Développement</strong> permettant d’obtenir 2 bachelors et un MSc (BAC+3 et BAC+5).
+      </p>
     </div>
-    </div>
+  </section>
 
+  <section class="infos">
+    <div class="info-card">
+      <div class="icon">⏰</div>
+      <h3>Durée</h3>
+      <p>1 à 3 ans</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">📍</div>
+      <h3>Lieu</h3>
+      <p>Campus La Plateforme,<br>Marseille</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">🎓</div>
+      <h3>Modalité</h3>
+      <p>Alternance</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">💰</div>
+      <h3>Budget</h3>
+      <p>Gratuit pour les apprenants</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">🏅</div>
+      <h3>Certification</h3>
+      <p>Bachelor Bac +3<br>ou MSc Bac +5</p>
+    </div>
+  </section>
+  <section class="formations-section">
+  <h2>Nos formations en développement</h2>
+  <div class="card-container">
     
-       <div class="dropdown">
-        <button>Formation continues </button>
-        <div class="content">
-            <a class="" href=>IA et Métiers de l'Image   </a>
-            <a href="">IA Générative et Productivité  </a>
-            <a href="">IA pour le secteur public</a>
-               
-        </div>
-        
+    <!-- Carte 1 -->
+    <div class="card">
+      <img src="card1.png" alt="Formation 1">
+      <div class="card-content">
+        <h3>Concepteur Développeur d’Applications</h3>
+        <span class="badge orange">Bachelor IT</span> <span class="duration">– 3 ans</span>
+        <p>
+          La formation Bachelor IT – Spécialisation Développeur Web délivre un 
+          <strong>titre RNCP</strong> de Concepteur / Développeur d’applications de niveau 6 européen 
+          (équivalent BAC+3/4)
+        </p>
+        <h4>CONDITIONS D’ENTRÉE</h4>
+        <ul>
+          <li>➜ Après une 1e année de bachelor IT à La Plateforme.</li>
+          <li>➜ Entrée directe possible si vous avez déjà une appétence pour la technologie, la programmation, etc.</li>
+          <li>➜ Accès direct en BAC+3 possible sur dossier.</li>
+        </ul>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
     </div>
 
-<div class="dropdown">
-        <button>Atelier & Labs </button>
-        <div class="content">
-            <a class="" href=>L`atelier_  </a>
-            <a href="">IA Générative et Productivité</a>
-               
-        </div>
-        
+    <!-- Carte 2 -->
+    <div class="card">
+      <img src="card2.png" alt="Formation 2">
+      <div class="card-content">
+        <h3>Développeur logiciel / DevOps</h3>
+        <span class="badge pink">Bachelor IT</span> <span class="duration">– 3 ans</span>
+        <p>
+          La formation Bachelor IT – Spécialisation Développeur logiciel / DevOps délivre un 
+          <strong>titre RNCP</strong> de niveau 6 européen (équivalent BAC+3/4)
+        </p>
+        <h4>CONDITIONS D’ENTRÉE</h4>
+        <ul>
+          <li>➜ Après une 1e année de bachelor IT à La Plateforme.</li>
+          <li>➜ Entrée directe pour les profils motivés.</li>
+          <li>➜ Accès direct en BAC+3 possible sur dossier.</li>
+        </ul>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
     </div>
+
+    <!-- Carte 3 -->
+    <div class="card">
+      <img src="card3.png" alt="Formation 3">
+      <div class="card-content">
+        <h3>Ingénierie du Web</h3>
+        <p>
+          Cette formation du Master of Science prépare au métier de Chef de projet en Développement Web 
+          & Web Mobile, et vous permet d’obtenir un titre RNCP de niveau 7, équivalent BAC+5.
+        </p>
+        <h4>CONDITIONS D’ENTRÉE</h4>
+        <ul>
+          <li>➜ Après un bachelor IT Développeur web & web mobile à La Plateforme.</li>
+          <li>➜ Accès direct possible sur dossier, entretien et test de positionnement.</li>
+        </ul>
+        <a href="#" class="btn">En savoir plus</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="enjeux-web">
+  <div class="content-wrapper">
+    <div class="left">
+      <h2>
+        Quels sont les enjeux<br>
+        du Développement Web ?
+      </h2>
+    </div>
+    <div class="right">
+      <p>
+        La tâche principale d’un développeur web est de concevoir et de développer des applications en ligne.
+      </p>
+      <p>
+        L’objectif principal d’un développeur internet est de faciliter l’expérience utilisateur de chaque internaute sur le site conçu.
+      </p>
+      <p>
+        Le développement d’applications Web et de sites Web est un domaine en pleine expansion.<br>
+        On estime entre 10 000 et 15 000 le nombre de postes de développeur web à pourvoir en France. La demande pour ces professionnels est élevée et rend la carrière d’un développeur web très dynamique.
+      </p>
+      <p>
+        Dans ce domaine, les découvertes sont régulières et les techniques de travail changent très vite. Il faut donc être constamment en train d’apprendre et rester curieux pour aller chercher l’information.
+      </p>
+    </div>
+  </div>
+  <div class="button-wrapper">
+    <a href="#" class="cta-btn">Informations & inscriptions</a>
+  </div>
+</section>
+<!-- Sección: Les plus de la Plateforme -->
+<section class="plus-plateforme">
+  <div class="container">
+    <h2><span class="blue">Les plus</span> de la Plateforme</h2>
+    <p>
+      La Plateforme est une école du numérique et des nouvelles technologies co-fondée avec le Club Top 20 réunissant les grandes entreprises de la Métropole Aix Marseille.<br>
+      Notre objectif : des formations d’excellence accessibles au plus grand nombre, appuyées par une pédagogie innovante et le souci constant de l’employabilité
+    </p>
+    <a href="#" class="btn-blue">Déposer sa candidature</a>
+  </div>
+</section>
+
+<!-- Sección: Témoignage étudiant -->
+<section class="temoignage">
+  <div class="temoignage-content">
+    <div class="texte">
+      <h3><strong>Sofiane</strong>, <span>2e année</span></h3>
+      <p>« Le meilleur dans la Plateforme, c’est la diversité des élèves, on apprend des uns des autres, on travaille en groupe, et on nous fait complètement confiance. »</p>
+    </div>
+    <div class="image">
+      <img src="sofiane.png" alt="Photo de Sofiane">
+    </div>
+  </div>
+</section>
+<!-- Section FAQ -->
+<section class="faq-section">
+  <div class="faq-container">
+    <h2>Des questions ?</h2>
+    <div class="faq-columns">
+      <!-- Columna izquierda -->
+      <div class="faq-column">
+        <h3>Comment se déroule la formation ?</h3>
+        <p>La première année de formation se déroule à 100 % à l’école... etc.</p>
+
+        <h3>Combien ça coûte ?</h3>
+        <p>Les frais de scolarité pour la 1ère année... etc.</p>
+
+        <h3>Mon employabilité est-elle garantie ?</h3>
+        <p>La Plateforme forme aux métiers les plus recherchés... etc.</p>
+
+        <h3>Alternance - type de contrat</h3>
+        <p>Accessible à partir de la 2ème année... etc.</p>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="faq-column">
+        <h3>Aurai-je de l’aide pour trouver une alternance ?</h3>
+        <p>Dans la 1ère année... etc.</p>
+
+        <h3>Comment s’opère la sélection ?</h3>
+        <p>Il n’y a pas de prérequis techniques... etc.</p>
+
+        <h3>Modalité d’évaluation</h3>
+        <p>L’évaluation des étudiants se fait par projet... etc.</p>
+
+        <h3>Chiffres clé de la formation Bachelor IT</h3>
+        <p>Nombre d’étudiants : 1000... etc.</p>
+
+        <a href="#" class="btn-red">Prendre rdv pour en savoir plus</a>
+      </div>
+    </div>
+
+    <!-- Imagen inferior -->
+    <div class="faq-image">
+      <img src="photocollegues.png" alt="Étudiants en discussion">
+    </div>
+  </div>
+</section>
+</section>
+             <footer>
+                <div class="logo liste-liens">
+                    <img src="Fichier-1.svg" alt="La plateforme"><br>
+                    <a id="rejoindre" class="bouton">Rejoingnez nos équipes</a>
+                    <a id="telecharger" class="bouton">Télécharger la brochure</a>
+                </div>
+                <div class="liste-liens">
+                    <h3>La Plateforme</h3><br>
+                    <a href="page-accueil.html">Accueil</a><br>
+
+                    <a>Qui sommes-nous ?</a><br>
+
+                    <a>Notre brochure</a><br>
+
+                    <a >Ils parlent de nous</a><br>
+
+                    <a>News</a><br>
+                    <a>Taxe d'apprentissage</a><br>
+
+                </div>
+                <div class="liste-liens">
+                    <h3>Les Formations</h3><br>
+
+                    <a >Bachelor IT</a><br>
+
+                    <a >Master of Science</a><br>
+
+                    <a >Innovation Lab</a><br>
+
+                    <a >Développement</a><br>
+
+                    <a >Intelligence Artificielle</a><br>
+
+                    <a >Cybersécurité</a><br>
+                    </div>
+                 <div class="liste-liens">
+                    <h3>Informations</h3><br>
+
+                    <p>8 rue d’hozier, 13002 Marseille</p><br>
+
+                    <p>Tel : 04.84.89.43.69</p><br>
+
+                    <a class="bouton" href="contact.html">Contact</a>
+                 </div>  
+
+        </footer>
+
+
 </body>
+</html>
