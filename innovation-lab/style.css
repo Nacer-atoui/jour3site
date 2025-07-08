@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset */
+*,
+::before,
+::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter Tight", sans-serif;
+    color: black;
+}
+
+h2 {
+    font-size: clamp(46px, 5vw, 64px);
+    font-weight: 400;
+    border-top: 1px solid #000;
+    padding: 2rem 0;
+}
+
+h3 {
+    font-size: clamp(28px, 5vw, 36px);
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+p {
+    line-height: 2em;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 94px;
+    padding: 0 2rem;
+    box-shadow: rgba(19, 20, 22, 0.4) 0px 10px 10px -10px;
+}
+
+.burger {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.burger .bar {
+    position: relative;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.burger .bar::before,
+.burger .bar::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.burger .bar::before {
+    top: -8px;
+}
+
+.burger .bar::after {
+    top: 8px;
+}
+
+#menu-toggle:checked +.burger .bar {
+    background-color: transparent;
+}
+
+#menu-toggle:checked +.burger .bar::before {
+    transform: rotate(135deg);
+    top: 0;
+}
+
+#menu-toggle:checked+.burger .bar::after {
+    transform: rotate(-135deg);
+    top: 0;
+}
+
+.dropdown {
+    position: absolute;
+    width: 100%;
+    max-height: 0;
+    top: 94px;
+    left: 0;
+    color: #666;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    box-shadow: rgba(33, 35, 38, 0.4) 0px 10px 10px -10px;
+}
+
+#menu-toggle:checked~.dropdown {
+    max-height: 309px;
+    border-top: 3px solid #2ea3f2;
+}
+
+.dropdown ul {
+    list-style-type: none;
+    padding: 2rem;
+    line-height: 3em;
+}
+
+.dropdown ul li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(228, 226, 226);
+    padding: 0 2rem;
+}
+
+.dropdown ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: #999;
+    font-weight: 600;
+}
+
+.dropdown ul li a:hover {
+    color: #777;
+}
+
+.chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    margin-left: 12px;
+    flex-shrink: 0;
+}
+
+.chevron i {
+    font-size: 14px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    color: black;
+}
+
+header h1 {
+    font-size: clamp(64px, 6vw, 90px);
+    font-weight: 500;
+}
+
+header p {
+    font-size: 20px;
+}
+
+.btn {
+    width: fit-content;
+    font-size: 14px;
+    padding: .8rem 1rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.btn i {
+    margin-right: .5rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+section > p {
+    font-size: 24px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+section .articles {
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+section .articles article {
+    border-top: 1px solid #000;
+}
+
+section .articles article p {
+    margin-top: 1.5rem;
+}
+
+section.formations .articles {
+    margin-top: 0;
+}
+
+section.formations .articles article {
+    border-top: none;
+}
+
+.card {
+    padding-top: 2rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+.card figcaption .btn {
+    margin-top: 2rem;
+}
+
+.img-graph {
+    margin-top: 2rem;
+}
+
+.img-graph img {
+    width: 100%;
+}
+
+.skills {
+    background-color: black;
+    color: white;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    line-height: 2rem;
+    border-top: 1px solid white;
+    padding: 0.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
