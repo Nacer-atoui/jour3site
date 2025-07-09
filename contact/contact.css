@@ -3,13 +3,44 @@ body{
     overflow-x:hidden;
 
 }
+
 header {
     display: flex;
-    height: 94px;
+    
+    flex-direction: column;
     background-color: #fff;
-    align-items: center;
     padding: 0 2rem;
-    justify-content: space-between;
+
+}
+
+/*petits écrans */
+@media only screen and (max-width: 1000px)
+{
+
+    #logo-tete
+
+    {
+        width: 50%;
+        transition: all 1s ease-in-out;
+
+    }
+
+}
+/* grands écrans */
+@media only screen and (min-width: 1000px)
+{
+    #logo-tete 
+    {
+        width: 40%;
+        transition: all 1s ease-in-out;
+
+    }
+    .menu {
+        display: flex;   
+        justify-content: space-around;
+        align-items: center;
+    }
+    
 }
 /*texte de présentation et lien cadre bleu*/
 .textelink {
@@ -83,17 +114,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto auto;
 }
 .contain-grid {
     display: grid;
 }
 
-.contain-flex {
-    display: flex;
-    margin: auto auto;
-    padding: 0%;
-    justify-content: center;
-}
 
 form {
     display: grid;
@@ -312,20 +338,23 @@ label {
 a {
     text-decoration: none;
 }
-.dropdown{
-    display: inline-block; 
+.dropdown {
+    position: relative;
+    width: fit-content;
+    display: block;
 }
 .dropdown button{
+    position: relative;
     background-color: #0084fa;
     padding: 10px 15px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 40px;
     color: whitesmoke;
     border: none;
     cursor: pointer;
     margin: 1rem auto;
 }
-.dropdown a{
+.content li{
     background-color: grey;
     display: block;
     color: whitesmoke;
@@ -334,22 +363,37 @@ a {
 
 
 }
-.dropdown .content{  
+.dropdown .content{
     visibility: hidden;
     position: absolute;
     opacity: 0;
     box-shadow: 2px 2px 5px #0084fa;
     
 }
-.dropdown:hover .content{
-    visibility: visible;
-    opacity: 1;
-    text-align: center;
-    transition: visibility 0.9s, opacity 0.2s linear;
 
-
-
+.dropdown .content ul li {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    box-shadow: 2px 2px 5px #0084fa;
+    
 }
+.dropdown .content .sous-menu:hover li{
+    visibility: visible;
+    position: absolute;
+    opacity: 1;
+    box-shadow: 2px 2px 5px #0084fa;
+    
+}
+.dropdown:hover .content{
+        display: block;
+
+        visibility: visible;
+        opacity: 1;
+        text-align: center;
+        transition: visibility 0.9s, opacity 0.2s linear;
+
+    }
 .dropdown:hover button{
     background-color: blueviolet;
 }
@@ -358,5 +402,5 @@ a {
 }
 
 .dropdown a {
-    font-size: 1.5em;
+    font-size: 1rem;
 }
