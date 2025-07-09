@@ -56,7 +56,7 @@ body {
 }
 
 .hero {
-  background-image: url('photodev.webp'); 
+  background-image: url('images/photodev.webp'); 
   background-size: cover;
   background-position: center;
   height: 480px;
