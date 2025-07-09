@@ -203,7 +203,8 @@
         <h2>Équipe pédagogique :</h2>
         <div class="slider team">
             <figure id="slide5">
-                <img src="https://laplateforme.io/wp-content/uploads/2022/12/sylvia-il-hp.webp" alt="Sylvia Andriantsimahavandy profile">
+                <img src="https://laplateforme.io/wp-content/uploads/2022/12/sylvia-il-hp.webp"
+                    alt="Sylvia Andriantsimahavandy profile">
                 <figcaption>
                     <p>Sylvia Andriantsimahavandy</p>
                     <p>Directrice Innovation</p>
@@ -211,7 +212,8 @@
                 </figcaption>
             </figure>
             <figure id="slide6">
-                <img src="https://laplateforme.io/wp-content/uploads/2022/12/tiphaine-il-hp.webp" alt="Tiphaine Pitoiset">
+                <img src="https://laplateforme.io/wp-content/uploads/2022/12/tiphaine-il-hp.webp"
+                    alt="Tiphaine Pitoiset">
                 <figcaption>
                     <p>Tiphaine Pitoiset</p>
                     <p>Responsable formation Habiter demain</p>
@@ -219,11 +221,13 @@
                 </figcaption>
             </figure>
             <figure id="slide7">
-                <img src="https://laplateforme.io/wp-content/uploads/2022/12/vytas-il-hp.webp" alt="Vytas Jankauskas profile">
+                <img src="https://laplateforme.io/wp-content/uploads/2022/12/vytas-il-hp.webp"
+                    alt="Vytas Jankauskas profile">
                 <figcaption>
                     <p>Vytas Jankauskas</p>
                     <p>Responsable formation Réseaux sociaux de demain</p>
-                    <a href="https://www.linkedin.com/in/vytas-jankauskas-106494177/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/vytas-jankauskas-106494177/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
                 </figcaption>
             </figure>
         </div>
@@ -233,17 +237,53 @@
             <a href="#slide7" class="dot" id="dot7"></a>
         </div>
     </section>
+    <footer>
+        <figure>
+            <img src="https://laplateforme.io/wp-content/uploads/2024/02/Fichier-1.svg" alt="">
+            <figcaption>
+                <a href="https://recrutement.laplateforme.io/" class="btn join">Rejoignez nos équipes<i class="fa-solid fa-chevron-right"></i></a>
+                <a href="https://laplateforme.io/telechargement-brochure/" class="btn download">Télécharger la brochure</a>
+            </figcaption>
+        </figure>
+        <article>
+            <h3>La Plateforme</h3>
+            <ul>
+                <li><a href="#">Acceuil</a></li>
+                <li><a href="#">Qui sommes-nous ?</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </article>
+        <article>
+
+        </article>
+        <article>
+
+        </article>
+    </footer>
     <script src="https://kit.fontawesome.com/cf618d8113.js" crossorigin="anonymous"></script>
     <script>
         const slider = document.querySelector(".slider");
         const dots = document.querySelectorAll(".dot");
         const articles = document.querySelectorAll(".slider article");
+        const totalSlides = articles.length;
 
-        slider.addEventListener("scroll", () => {
-            const index = Math.round(slider.scrollLeft / slider.offsetWidth);
+        let currentIndex = 0;
+
+        function goToSlide(index) {
+            const offset = articles[index].offsetLeft;
+            slider.scrollTo({ left: offset, behavior: 'smooth' });
+
             dots.forEach(dot => dot.style.background = "#bbb");
-            dots[index].style.background = "black";
-        });
+            if (dots[index]) dots[index].style.background = "black";
+        }
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            goToSlide(currentIndex);
+        }, 5000);
     </script>
 </body>
 

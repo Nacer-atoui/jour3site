@@ -11,6 +11,8 @@
 body {
     font-family: "Inter Tight", sans-serif;
     color: black;
+    max-width: 1200px;
+    margin: auto;
 }
 
 h2 {
@@ -317,7 +319,10 @@ section.formations .articles article {
 .carousel:has(#slide1:target) #dot1,
 .carousel:has(#slide2:target) #dot2,
 .carousel:has(#slide3:target) #dot3,
-.carousel:has(#slide4:target) #dot4 {
+.carousel:has(#slide4:target) #dot4,
+.carousel:has(#slide5:target) #dot5,
+.carousel:has(#slide6:target) #dot6,
+.carousel:has(#slide7:target) #dot7 {
     background-color: black;
 }
 
@@ -330,6 +335,57 @@ section.formations .articles article {
 .team {
     gap: 1rem;
 }
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #333;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+footer figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+footer figure figcaption {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: .5rem;
+}
+
+footer figure figcaption a {
+    width: 100%;
+    padding: .5rem 1rem;
+}
+
+footer a {
+    padding: .5rem 1rem;
+}
+
+.join {
+    background-color: #E9E9E9;
+    color: black;
+}
+
+.join i {
+    margin-left: 1rem;
+}
+
+.download {
+    background-color: #e74a34;
+    color: white;
+}
+
+footer h3 {
+    margin: 0;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
     .grid-2 {
