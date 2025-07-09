@@ -338,10 +338,14 @@ section.formations .articles article {
 
 footer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     background-color: #333;
     padding: 2rem;
     gap: 2rem;
+    color: white;
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 footer figure {
@@ -362,8 +366,30 @@ footer figure figcaption a {
     padding: .5rem 1rem;
 }
 
-footer a {
-    padding: .5rem 1rem;
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+footer li {
+    padding: 0;
+}
+
+footer .nav-footer a {
+    text-decoration: none;
+    color: white;
+    line-height: 2em;
+}
+
+footer .btn {
+    padding: .4rem;
+}
+
+footer b {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
 }
 
 .join {
@@ -384,8 +410,25 @@ footer h3 {
     margin: 0;
 }
 
+footer .information {
+    display: flex;
+    flex-direction: column;
+}
 
+footer .information li {
+    line-height: 2em;
+}
 
+footer .information a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .information .btn {
+    margin-top: 2rem;
+    background-color: transparent;
+    border: 3px solid white;
+}
 
 @media screen and (max-width: 768px) {
     .grid-2 {
@@ -394,5 +437,21 @@ footer h3 {
 
     .grid-4 {
         grid-template-columns: 1fr 1fr;
+    }
+
+    footer.grid-4 {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    footer.grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 836px) {
+    .join i {
+        display: none;
     }
 }
