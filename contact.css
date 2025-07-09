@@ -312,53 +312,51 @@ label {
 a {
     text-decoration: none;
 }
-
-/* dropdown */
-
-    .dropdown{
-    display: inline-block;
-     
+.dropdown{
+    display: inline-block; 
 }
 .dropdown button{
-    background-color: oklab(55.605000000000004% -0.03694 -0.24263);
-    color: rgb(0, 0, 0);
+    background-color: #0084fa;
     padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    color: whitesmoke;
     border: none;
     cursor: pointer;
+    margin: 1rem auto;
 }
 .dropdown a{
+    background-color: grey;
     display: block;
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 5% 5%;
+
+
 }
-.dropdown .content{         /*   */ 
-    display: none;
+.dropdown .content{  
+    visibility: hidden;
     position: absolute;
-    background-color: hsl(0, 0%, 95%);
-    min-width: 100px;
-    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    opacity: 0;
+    box-shadow: 2px 2px 5px #0084fa;
     
 }
 .dropdown:hover .content{
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    text-align: center;
+    transition: visibility 0.9s, opacity 0.2s linear;
+
+
+
 }
 .dropdown:hover button{
-    background-color: hsl(0, 0%, 70%);
+    background-color: blueviolet;
 }
 .dropdown a:hover{
-    background-color: hsl(0, 0%, 90%);
+    background-color: blueviolet;
 }
-.dropdown-content {  
 
-    right: 0; 
-    }
-
-    header {
-    line-height: 23px;
-    font-weight: 500;
-    top: 0;
-    background-color: #fff;
-
+.dropdown a {
+    font-size: 1.5em;
 }
-   

@@ -12,14 +12,15 @@ body{
     overflow-x:hidden;
 
 }
+
+
 header {
     display: flex;
     height: 94px;
     align-items: center;
-    padding: 0 2rem;
     justify-content: space-between;
-}
 
+}
 
 h2 {
     font-family: 'Google Sans Code';
@@ -151,77 +152,69 @@ label {
 .center {
         text-align: center;
 
-    }
+}
 .mentions-legales {
     font-size: 0.5rem;
 }
 hr {
-    width: 60%;
+    width: 80%;
+    margin: auto auto;
 }
 .sous-partie {
-    width: 60%;
+    width: 80%;
     margin: auto auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
-/* ordinateur*/
-
-@media only screen and (min-width:768px) {
-.contain-flex-row {
-
-        display: flex;
+@media only screen and (min-width: 768px)
+{   .contain-flex-row {
+          display: flex;
         flex-direction: row;
-        margin: auto auto;
         gap: 4rem;
         justify-content: center;
-    }
+        margin: auto auto;
 
+}
     .contain-flex-column {
         display: flex;
         flex-direction: column;
-    }
-    .from-start {
-        
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .from-end {
-        align-items: flex-end;
+        justify-content: center;
+        margin: auto auto;
     }
 }
-/*smarphones */
-@media only screen and (max-width:767px)
+@media only screen and (max-width: 767px)
 {
 .contain-flex-row {
 
-        display: flex;
-        flex-direction: row;
-        margin: auto auto;
+        display: block;
+        flex-direction: column;
         gap: 4rem;
         justify-content: center;
+        margin: auto auto;
     }
 
     .contain-flex-column {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto auto;
     }
-    .from-start {
+}
+.from-start {
         
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .from-end {
+.from-end {
         align-items: flex-end;
     }
-}
 .thick {
     max-width: 256px;
 }
 .large {
-    width: 60%;
+    width: 80%;
 
 }
+
 .logo-certifications {
     width: 256px;
     height: 144px;
@@ -241,48 +234,65 @@ hr {
 }
 .certifications {
     background-color: #f6f6f6;
+    justify-content: center;
  
 }
+
 section {
     margin: 4rem auto;
 }
-/* dropdown */
 
-    .dropdown{
-    display: inline-block;
-     
+.dropdown{
+    display: inline-block; 
 }
 .dropdown button{
-    background-color: oklab(55.605000000000004% -0.03694 -0.24263);
-    color: rgb(0, 0, 0);
+    background-color: #0084fa;
     padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    color: whitesmoke;
     border: none;
     cursor: pointer;
 }
 .dropdown a{
+    background-color: #0084fa;
     display: block;
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 5% 5%;
+
+    font-size: 1.5em;
 }
-.dropdown .content{         /*   */ 
-    display: none;
+.dropdown ul {
+    margin: 0 auto;
+    list-style-type: none;
+    background-color: blueviolet;
+}
+.dropdown .content{  
+    visibility: hidden;
     position: absolute;
-    background-color: hsl(0, 0%, 95%);
-    min-width: 100px;
-    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
-    
+    opacity: 0;
+    box-shadow: 2px 2px 5px #0084fa;
 }
 .dropdown:hover .content{
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s linear;
 }
 .dropdown:hover button{
-    background-color: hsl(0, 0%, 70%);
+    background-color: blueviolet;
 }
 .dropdown a:hover{
-    background-color: hsl(0, 0%, 90%);
+    background-color: blueviolet;
 }
-.dropdown-content {  
+.dropdown .sous-menu {
+    position: absolute;
+    opacity: 1;
+    box-shadow: 2px 2px 5px #0084fa;
 
-    right: 0; 
+}
+.dropdown .sous-menu:hover{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s linear;
 }
