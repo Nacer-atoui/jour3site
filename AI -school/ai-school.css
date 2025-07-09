@@ -1,0 +1,263 @@
+* {
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+header {
+    line-height: 23px;
+    font-weight: 500;
+    top: 0;
+    background-color: #fff;
+
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    width: 30%;
+    padding: 1.5%;
+}
+
+
+
+.titre {
+    line-height: 1em;
+}
+
+#presentation {
+    background-image: url(https://laplateforme.io/wp-content/uploads/2022/05/montage-categorie-ia-2-scaled.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.texteimg {
+    color: white;
+    padding: 5%;
+    font-size: 23px;
+    line-height: 1.5em;
+    width: 480px;
+}
+
+.txt {
+    padding-top: 8%;
+}
+
+#information {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    position: relative;
+    margin: 0 auto;
+    height: 250px;
+    box-shadow: 0 10px 5px -5px lightgray;
+
+
+
+}
+
+span.spn {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.svginfo {
+    position: relative;
+    width: 40px;
+
+}
+
+.info {
+    padding: 5%;
+    margin: 0;
+    width: 90px;
+
+}
+
+.inf {
+    color: gray;
+}
+
+.texteinfo {
+    position: relative;
+    left: 50px;
+    bottom: 40px;
+    font-size: large;
+}
+
+.lien-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 24%;
+    gap: 50px;
+    margin: 0 auto;
+
+
+}
+
+.containtitle {
+
+    text-align: center;
+    font-size: 25px;
+}
+
+.devia {
+
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 300ms ease 0ms;
+    width: 300px;
+    padding-bottom: 20px;
+
+}
+
+.cdpia {
+
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+    transition: transform 300ms ease 0ms;
+    width: 300px;
+    cursor: pointer;
+
+}
+
+.txtformation {
+    margin: 0 auto;
+
+
+}
+
+.illustration {
+    margin: 0 auto;
+}
+
+#titre1,
+#titre2 {
+    padding: 0 15%;
+}
+
+.p-containlink {
+    padding: 0 15%;
+}
+
+.condition {
+    font-weight: bold;
+}
+
+.devia:hover {
+    cursor: pointer;
+    transition: transform 300ms ease 0ms;
+    transform: scaleX(1.02) scaleY(1.02) !important;
+}
+
+.cdpia:hover {
+    cursor: pointer;
+    transition: transform 300ms ease 0ms;
+    transform: scaleX(1.02) scaleY(1.02) !important;
+}
+
+.divlink {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    color: #ffffff !important;
+    border-width: 0px !important;
+    border-radius: 11px;
+    font-size: 16px;
+    font-weight: 600 !important;
+    background-color: #e55615;
+    margin-left: 15%;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    transition: all 300ms ease 0ms;
+
+    transition-property: all !important;
+}
+
+.phrase-sous-lien {
+    padding: 5%;
+    font-size: large;
+    line-height: 1.5em;
+}
+
+.enjeu {
+    background-color: #1c366d;
+    position: relative;
+
+}
+
+.texteenjeu {
+    color: white;
+    font-size: large;
+    padding: 5%;
+    display: flex;
+
+}
+
+.p-enjeu {
+    padding-right: 10%;
+    padding-bottom: 10%;
+    width: 40%;
+    line-height: 1.5em;
+
+}
+
+#titreenjeu {
+    font-size: 40px;
+    width: 60%;
+    padding-left: 5%;
+    line-height: 1.5em;
+
+}
+
+#lien-info-insc-1 {
+    text-decoration: none;
+    color: #fff;
+    border-width: 0px !important;
+    border-radius: 11px;
+    font-size: 16px;
+    font-weight: 600 !important;
+    background-color: #e55615;
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    padding: 1em;
+
+}
+
+
+.lien-info-insc:hover {
+    cursor: pointer;
+    transition: transform 300ms ease 0ms;
+    transform: scaleX(1.02) scaleY(1.02) !important;
+}
+
+.lesplus {
+    text-align: center;
+    width: 47%;
+    margin: auto;
+}
+
+#paraplus {
+    font-size: 20px;
+    line-height: 1.5em;
+    height: 20px;
+
+}
+
+#titleplus {
+    padding: 5%;
+    font-size: xx-large;
+}
