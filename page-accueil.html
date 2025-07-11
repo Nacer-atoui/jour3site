@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La grande école du numérique pour tous !">
     <link rel="stylesheet" href="page-accueil.css">
     <title>Laplateforme_</title>
 </head>
@@ -13,7 +14,8 @@
         <a href="page-accueil.html"><img src="images/logo-laplateforme-2024.png" alt="titre"></a>
         <div>
             <div class="dropdown">
-                <button type="button">Qui sommes-nous ?</button>
+                <input type="checkbox" id="about">
+                <label for="about" class="btn-label">Qui sommes-nous ?</label>
                 <div class="content">
                     <a href="about/qui-nous-sommes.html">Qui sommes nous?</a>
                     <a href="#">Nos ecoles</a>
@@ -21,7 +23,8 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button type="button">Extrascolaire</button>
+                <input type="checkbox" id="underschool">
+                <label for="underschool" class="btn-label">Extrascolaire</label>
                 <div class="content">
                     <a class="TUMO Marseille" href="https://laplateforme.io/tumo-marseille/">TUMO Marseille </a>
                     <a href="#">Cyberpark</a>
@@ -29,7 +32,8 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button type="button">Formation initales / alternance </button>
+                <input type="checkbox" id="alternance">
+                <label for="alternance" class="btn-label">Formation initales / alternance</label>
                 <div class="content">
                     <a href="#">RE - START -12 MOIS </a>
                     <a href="#">BACHELOR IT </a>
@@ -38,7 +42,8 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button type="button">Formation continues </button>
+                <input type="checkbox" id="continue">
+                <label for="continue" class="btn-label">Formation continues</label>
                 <div class="content">
                     <a href="#">IA et Métiers de l'Image </a>
                     <a href="#">IA Générative et Productivité </a>
@@ -46,7 +51,8 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button type="button">Atelier &amp; Labs </button>
+                <input type="checkbox" id="labs">
+                <label for="labs" class="btn-label">Atelier &amp; Labs</label>
                 <div class="content">
                     <a href="#">L`atelier_ </a>
                     <a href="#">IA Générative et Productivité</a>
@@ -131,6 +137,7 @@
             <a class="bouton" href="contact/contact.html">Contact</a>
         </div>
     </footer>
+    <script src="page-acceuil.js"></script>
 </body>
 
 </html>
