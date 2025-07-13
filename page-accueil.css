@@ -280,15 +280,6 @@ footer {
     flex-direction: column;
     justify-content: space-around;
 }
-.logo {
-    display: flex;
-    width: 30%;
-}
-
-#gauche {
-    padding: 5%;
-}
-
 /* flex  */
 .accroche{
 

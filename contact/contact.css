@@ -1,15 +1,16 @@
 body{
     background-color: white;
-    overflow-x:hidden;
-
+    margin: 0;
+    overflow-x: hidden;
 }
 
 header {
     display: flex;
-    
+    width: 100%;
+    margin: auto auto;
     flex-direction: column;
     background-color: #fff;
-    padding: 0 2rem;
+    padding: 0;
 
 }
 
@@ -171,13 +172,14 @@ fieldset {
 }
 
 .question {
-    width: 90%;
-    margin: 5rem auto;
+    width: 100%;
+    padding: 10%;
     color: black;
 }
 
 .liens-reseaux {
     display: flex;
+    width: 80%;
     justify-content: space-between; 
 }
 .bouton{
@@ -195,11 +197,13 @@ fieldset {
 
 
 .contain-box {
-
+    margin: 0;
+    width: 100%;
    display: grid;
 }
 .container-principal {
-   background-color: #0062ff;
+    width: 80%;
+    background-color: #0062ff;
     padding:5% 10%;
 
 }
@@ -258,9 +262,9 @@ footer {
     margin: 2rem auto;
 }
     footer {
-    padding: 50px 0px;
-    display: flex;
     width: 100%;
+    padding: 0px 0px;
+    display: flex;
     background-color: rgb(31,31,31);
     color: white;
 }
@@ -338,69 +342,127 @@ label {
 a {
     text-decoration: none;
 }
-.dropdown {
-    position: relative;
-    width: fit-content;
-    display: block;
+
+.row {
+    display: flex;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 2rem auto;
+    width: 60%;
+
+}
+
+input[type=text] {
+    width: 91%;
+    padding: 10px;
+    margin: 10px;
+
+}
+input[type=tel]{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+
+}
+input[type=email] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+
+}
+input[type=checkbox] {
+    margin: 10px;
+
+    padding: 1px;
+
+}
+label {
+    width: 90%;
+    padding: 0%;
+    margin: 10px;
+}
+
+textarea {
+    width: 93%;
+    height: 200px;
+    margin: 10px;
+}
+
+
+select {
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+.dropdown{
+    display: inline-block;
+    margin: 2rem; 
 }
 .dropdown button{
-    position: relative;
     background-color: #0084fa;
     padding: 10px 15px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 40px;
     color: whitesmoke;
     border: none;
     cursor: pointer;
-    margin: 1rem auto;
 }
-.content li{
-    background-color: grey;
+.dropdown a{
+    background-color: #0084fa;
     display: block;
     color: whitesmoke;
     text-decoration: none;
     padding: 5% 5%;
 
-
+    font-size: 1.5em;
 }
-.dropdown .content{
+.dropdown ul {
+    margin: 0 auto;
+    list-style-type: none;
+    background-color: #0084fa;
+}
+.dropdown .content{  
     visibility: hidden;
     position: absolute;
     opacity: 0;
     box-shadow: 2px 2px 5px #0084fa;
-    
+
 }
 
-.dropdown .content ul li {
-    visibility: hidden;
+.dropdown-sub ul {
+   visibility: hidden;
     position: absolute;
     opacity: 0;
     box-shadow: 2px 2px 5px #0084fa;
-    
 }
-.dropdown .content .sous-menu:hover li{
+.dropdown-sub:hover ul{
+    position:absolute;
+    left: 260px;
+    top: 100px;
     visibility: visible;
-    position: absolute;
     opacity: 1;
-    box-shadow: 2px 2px 5px #0084fa;
-    
+    transition: all 0.5s linear;
+    background-color: #0084fa;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5% 5%;
+    font-size: 1.5em;
 }
 .dropdown:hover .content{
-        display: block;
-
-        visibility: visible;
-        opacity: 1;
-        text-align: center;
-        transition: visibility 0.9s, opacity 0.2s linear;
-
-    }
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s linear;
+}
 .dropdown:hover button{
     background-color: blueviolet;
 }
 .dropdown a:hover{
     background-color: blueviolet;
-}
-
-.dropdown a {
-    font-size: 1rem;
 }

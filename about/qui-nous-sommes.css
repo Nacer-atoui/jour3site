@@ -14,11 +14,14 @@ body{
 }
 
 
+
 header {
     display: flex;
-    height: 94px;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    margin: auto auto;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 0;
 
 }
 
@@ -244,6 +247,8 @@ section {
 
 .dropdown{
     display: inline-block; 
+        margin: 2rem; 
+
 }
 .dropdown button{
     background-color: #0084fa;
@@ -266,13 +271,34 @@ section {
 .dropdown ul {
     margin: 0 auto;
     list-style-type: none;
-    background-color: blueviolet;
+    background-color: #0084fa;
 }
 .dropdown .content{  
     visibility: hidden;
     position: absolute;
     opacity: 0;
     box-shadow: 2px 2px 5px #0084fa;
+
+}
+
+.dropdown-sub ul {
+   visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    box-shadow: 2px 2px 5px #0084fa;
+}
+.dropdown-sub:hover ul{
+    position:absolute;
+    left: 260px;
+    top: 100px;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    background-color: #0084fa;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5% 5%;
+    font-size: 1.5em;
 }
 .dropdown:hover .content{
     visibility: visible;
@@ -285,14 +311,18 @@ section {
 .dropdown a:hover{
     background-color: blueviolet;
 }
-.dropdown .sous-menu {
-    position: absolute;
-    opacity: 1;
-    box-shadow: 2px 2px 5px #0084fa;
+
+#rejoindre {
+    color: black;
+    background-color: white;
+
 
 }
-.dropdown .sous-menu:hover{
-    visibility: visible;
-    opacity: 1;
-    transition: all 1s linear;
+#telecharger {
+    color: white;
+    
+    background-color: red;
+}
+a {
+    text-decoration: none;
 }

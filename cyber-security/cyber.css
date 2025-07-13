@@ -1,0 +1,436 @@
+body {
+    position: relative;
+    z-index: 1;
+    margin: auto auto;
+    overflow-x: hidden;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 94px;
+    padding: 0 2rem;
+    box-shadow: rgba(19, 20, 22, 0.4) 0px 10px 10px -10px;
+}
+
+nav>img {
+    color: rgb(0, 98, 255);
+}
+
+.image-principal {
+    width: 400px;
+}
+
+.formations {
+    width: 100vw;
+    box-shadow: 10px 10px 10px 8px #888888;}
+
+.burger {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.burger .bar {
+    position: relative;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.burger .bar::before,
+.burger .bar::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.burger .bar::before {
+    top: -8px;
+}
+
+.burger .bar::after {
+    top: 8px;
+}
+
+#menu-toggle:checked+.burger .bar {
+    background-color: transparent;
+}
+
+#menu-toggle:checked+.burger .bar::before {
+    transform: rotate(135deg);
+    top: 0;
+}
+
+#menu-toggle:checked+.burger .bar::after {
+    transform: rotate(-135deg);
+    top: 0;
+}
+
+.dropdown {
+    position: absolute;
+    width: 100%;
+    max-height: 0;
+    top: 94px;
+    left: 0;
+    color: #666;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+    box-shadow: rgba(33, 35, 38, 0.4) 0px 10px 10px -10px;
+}
+
+#menu-toggle:checked~.dropdown {
+    max-height: 309px;
+    border-top: 3px solid #2ea3f2;
+}
+
+.dropdown ul {
+    list-style-type: none;
+    padding: 2rem;
+    line-height: 3em;
+}
+
+.dropdown ul li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(228, 226, 226);
+    padding: 0 2rem;
+}
+
+.dropdown ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: #999;
+    font-weight: 600;
+}
+
+.dropdown ul li a:hover {
+    color: #777;
+}
+
+.chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    margin-left: 12px;
+    flex-shrink: 0;
+}
+
+.chevron i {
+    font-size: 14px;
+}
+
+.logo {
+    width: 450px;
+    height: auto;
+}
+
+.container-image {
+    width: 100%;
+    background-image: url(../images/montage-categorie-cybersecu-scaled.webp);
+    background-size: contain no-repeat;
+    color: white;
+    padding: 10%;
+}
+
+.texte-sur-image {
+    width: 70%;
+    flex-direction: column;
+    padding-left: 10%;
+    color: white;
+}
+
+.color {
+    color: orangered;
+}
+
+.taille-icone {
+    margin: auto auto;
+    width: 70%;
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.margin {
+    margin: auto 4rem;
+}
+.colonne {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 20%;
+}
+
+.colonne2 {
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 30%;
+    gap: 4rem;
+}
+
+.colonne3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: auto auto;
+    width: 50%;
+    gap: 4rem;
+}
+
+.colonne p {
+    margin: 4rem 4rem;
+}
+
+.gras {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.p-50 {
+    width: 30%;
+    font-size: 1.4rem;
+}
+.row {
+    display: flex;
+    width: 100%;
+    margin: auto auto;
+}
+.w-50 {
+    width: 50%;
+    padding: 5%;
+}
+#sofiane {
+    border-radius: 50px;
+}
+
+.link-row {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: auto auto;
+    justify-content:space-around;
+    padding: 5%;
+}
+
+.link-item {
+    padding: 5%;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: #333;
+    height: 700px;
+
+}
+
+.colonne2:hover a{
+    transition: all 0.5s ease-out;
+    transform: scaleX(1.02) scaleY(1.02);
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+}
+
+.enjeux {
+    background-color: #1c366d;
+    padding: 10%;
+    color: white;
+
+
+}
+
+h1 {
+    padding: 5% 0%;
+    text-align: center;
+
+}
+
+
+.bouton {
+    background-color: orangered;
+    color: white;
+    padding: 10px 30px;
+    font-size: larger;
+    border-radius: 30px;
+}
+
+.lesplus {
+    text-align: center;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin: auto auto;
+    padding: 10%;
+    flex-direction: column;
+}
+
+.sofiane {
+    background-color: #d22261;
+    color: white;
+    padding: 5%;
+}
+
+.colonne4 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto auto;
+
+}
+
+#form-dialog:modal {
+    width: 600px;
+    height: 800px;
+    border-radius: 50px;
+    background-color: #2ea3f2;
+    box-shadow: 13px 13px 10px rgba(0 0 0 / 0.5);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, .25);
+    backdrop-filter: blur(10px);
+}
+
+.petit {
+    font-size: 0.8rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 2rem auto;
+    width: 80%;
+
+}
+
+input[type=text] {
+    width: 91%;
+    padding: 10px;
+    margin: 10px;
+
+}
+input[type=tel]{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+
+}
+input[type=email] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+
+}
+input[type=checkbox] {
+    margin: 10px;
+
+    padding: 1px;
+
+}
+label {
+    width: 90%;
+    padding: 0%;
+    margin: 10px;
+}
+
+textarea {
+    width: 93%;
+
+    margin: 10px;
+}
+
+
+select {
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+button[type=submit] {
+    margin: 1rem auto;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+button[type=reset] {
+    margin: 1rem auto;
+    padding: 10px;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+
+footer {
+    padding: 50px 0px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(31,31,31);
+    color: white;
+}
+.liste-liens {
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logo-footer {
+    display: flex;
+    width: 30%;
+}
+
+
+#rejoindre {
+    color: black;
+    background-color: white;
+
+    width: 140px;
+    text-align: center;
+
+
+}
+#telecharger {
+    color: white;
+    width: 140px;
+    text-align: center;
+    background-color: red;
+}
+a {
+    text-decoration: none;
+}
