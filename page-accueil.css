@@ -19,8 +19,9 @@ body{
 }
 header {
     display: flex;
-    height: 94px;
+    height: 100px;
     background-color: #fff;
+    margin: auto auto;
     align-items: center;
     padding: 0 2rem;
     justify-content: space-between;
@@ -28,47 +29,72 @@ header {
 }
 /* dropdown */
 
-    .dropdown{
-    display: inline-block;
-     
-}
+  .dropdown{
+    display: inline-block; 
+        margin: 2rem; 
 
+}
 .dropdown button{
-    background-color: oklab(55.605000000000004% -0.03694 -0.24263);
-    color: rgb(0, 0, 0);
+    background-color: #0084fa;
     padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 40px;
+    color: whitesmoke;
     border: none;
     cursor: pointer;
 }
 .dropdown a{
+    background-color: #0084fa;
     display: block;
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 5% 5%;
+
+    font-size: 1.5em;
 }
-.dropdown .content{         /*   */ 
-    display: none;
+.dropdown ul {
+    margin: 0 auto;
+    list-style-type: none;
+    background-color: #0084fa;
+}
+.dropdown .content{  
+    visibility: hidden;
     position: absolute;
-    background-color: hsl(0, 0%, 95%);
-    min-width: 100px;
-    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
-    
+    opacity: 0;
+    box-shadow: 2px 2px 5px #0084fa;
+
+}
+
+.dropdown-sub ul {
+   visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    box-shadow: 2px 2px 5px #0084fa;
+}
+.dropdown-sub:hover ul{
+    position:absolute;
+    left: 260px;
+    top: 100px;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    background-color: #0084fa;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5% 5%;
+    font-size: 1.5em;
 }
 .dropdown:hover .content{
-    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s linear;
 }
 .dropdown:hover button{
-    background-color: hsl(0, 0%, 70%);
+    background-color: blueviolet;
 }
 .dropdown a:hover{
-    background-color: hsl(0, 0%, 90%);
+    background-color: blueviolet;
 }
-.dropdown-content {  
-
-    right: 0; 
-    }
-
-
 .pres {
     display: flex;
 }
