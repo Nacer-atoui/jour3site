@@ -31,9 +31,13 @@ nav>img {
     width: 400px;
 }
 
-.formations {
-    width: 100vw;
-    box-shadow: 10px 10px 10px 8px #888888;}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    padding-bottom: 5%;
+}
 
 .burger {
     display: flex;
@@ -175,9 +179,12 @@ nav>img {
 }
 
 .taille-icone {
-    margin: auto auto;
-    width: 70%;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
 }
 
 .align-center {
@@ -191,16 +198,30 @@ nav>img {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 20%;
 }
 
-.colonne2 {
+.infos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+}
 
+.info-card {
+  text-align: center;
+  margin: 1rem;
+  max-width: 180px;
+}
+
+.colonne2 {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 30%;
-    gap: 4rem;
+    width: 300px;
 }
 
 .colonne3 {
@@ -236,11 +257,17 @@ nav>img {
 }
 #sofiane {
     border-radius: 50px;
+    @media only screen and (max-width: 767px) {
+        width: 144px;
+        height: auto;
+    }
 }
 
 .link-row {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5%;
     width: 85%;
     margin: auto auto;
     justify-content:space-around;
@@ -261,7 +288,6 @@ nav>img {
 .colonne2:hover a{
     transition: all 0.5s ease-out;
     transform: scaleX(1.02) scaleY(1.02);
-
     box-shadow: 0 0 30px rgba(0, 0, 0, 1);
 }
 
@@ -309,20 +335,22 @@ h1 {
     flex-direction: column;
     width: 50%;
     margin: auto auto;
-
 }
-
+.overflow {
+    overflow: hidden;
+}
 #form-dialog:modal {
+    scrollbar-width: none;
     width: 600px;
     height: 800px;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: #2ea3f2;
     box-shadow: 13px 13px 10px rgba(0 0 0 / 0.5);
 }
 
 dialog::backdrop {
     background: rgba(0, 0, 0, .25);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
 }
 
 .petit {
@@ -394,10 +422,68 @@ button[type=reset] {
     padding: 10px;
     background-color: burlywood;
     border-radius: 10px;
+    
+}
+#close {
+    position: absolute;
+    right: 20px;
 }
 
 
+/* Pour telephones */
+@media only screen and (max-width:767px)
+{
+    .photo {
+    width: 80%;
+    margin: 2rem auto;
+}
+
 footer {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(31,31,31);
+    color: white;
+    padding: 50px 0px;
+
+}
+
+#gauche {
+    padding: 5%;
+}
+
+.liste-liens {
+    padding: 10%;
+    margin: 2rem auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.logo-footer {
+    margin: auto auto;
+    display: flex;
+    width: 75%;
+}
+}
+.boutonFooter {
+    padding: 1% 1%;
+    font-variant: small-caps; 
+    border: black solid 4px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    color: white;
+    text-align: center;
+}
+
+/* pour ordinateurs */
+@media only screen and (min-width: 768px) {
+
+.photo {
+    width: 50%;
+    margin: 2rem auto;
+}
+    footer {
     padding: 50px 0px;
     display: flex;
     width: 100%;
@@ -405,30 +491,39 @@ footer {
     color: white;
 }
 .liste-liens {
-    margin: 0 auto;
+    margin: 2rem auto;
     flex-direction: column;
-    justify-content: space-around;
-}
 
+}
 .logo-footer {
     display: flex;
     width: 30%;
+
 }
+
+#gauche {
+    padding: 5%;
+}
+
+}
+
+
 
 
 #rejoindre {
     color: black;
-    background-color: white;
+    padding: 10px 30px;
+    font-size: larger;
+    background-color: whitesmoke;
 
-    width: 140px;
-    text-align: center;
-
-
+    border-radius: 30px;
 }
 #telecharger {
     color: white;
-    width: 140px;
-    text-align: center;
+    padding: 10px 30px;
+    font-size: larger;
+    border-radius: 30px;
+
     background-color: red;
 }
 a {

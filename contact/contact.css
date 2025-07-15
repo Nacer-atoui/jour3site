@@ -137,7 +137,7 @@ select {
 fieldset {
     width: 100px;
     background: linear-gradient(rgb(0, 162, 255), lightblue, cyan);
-    border-radius: 50px;
+    border-radius: 20px;
 }
 .input {
 
@@ -408,8 +408,8 @@ select {
 .dropdown button{
     background-color: #0084fa;
     padding: 10px 15px;
-    font-size: 1.2rem;
-    border-radius: 40px;
+    font-size: 1rem;
+    border-radius: 10px;
     color: whitesmoke;
     border: none;
     cursor: pointer;
@@ -421,7 +421,7 @@ select {
     text-decoration: none;
     padding: 5% 5%;
 
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .dropdown ul {
     margin: 0 auto;
@@ -444,8 +444,8 @@ select {
 }
 .dropdown-sub:hover ul{
     position:absolute;
-    left: 260px;
-    top: 100px;
+    left: 180px;
+    top: 50px;
     visibility: visible;
     opacity: 1;
     transition: all 0.5s linear;
@@ -453,12 +453,12 @@ select {
     color: whitesmoke;
     text-decoration: none;
     padding: 5% 5%;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .dropdown:hover .content{
     visibility: visible;
     opacity: 1;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
 .dropdown:hover button{
     background-color: blueviolet;

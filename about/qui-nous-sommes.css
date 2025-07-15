@@ -47,21 +47,7 @@ h2 {
     color: white;
 }
 
-.rejoindre {
-    color: black;
-    background-color: white;
 
-
-}
-.telecharger {
-    color: white;
-    
-    background-color: red;
-}
-a {
-    text-decoration: none;
-    
-}
 
 /* Pour telephones */
 @media only screen and (max-width:767px)
@@ -164,15 +150,21 @@ hr {
     margin: auto auto;
 }
 .sous-partie {
+    display: flex;
+    flex-wrap: wrap;
     width: 80%;
     margin: auto auto;
 }
+
+
 @media only screen and (min-width: 768px)
 {   .contain-flex-row {
-          display: flex;
+        display: flex;
         flex-direction: row;
-        gap: 4rem;
-        justify-content: center;
+        flex-wrap: nowrap;
+
+        gap: 2rem;
+        justify-content: space-around;
         margin: auto auto;
 
 }
@@ -183,19 +175,22 @@ hr {
         margin: auto auto;
     }
 }
-@media only screen and (max-width: 767px)
+
+
+@media only screen and (max-width: 1000px)
 {
 .contain-flex-row {
-
-        display: block;
+        display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         gap: 4rem;
         justify-content: center;
         margin: auto auto;
     }
 
     .contain-flex-column {
-        display: block;
+        display: flex;
+        flex-wrap:wrap;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -253,8 +248,8 @@ section {
 .dropdown button{
     background-color: #0084fa;
     padding: 10px 15px;
-    font-size: 1.2rem;
-    border-radius: 40px;
+    font-size: 1rem;
+    border-radius: 10px;
     color: whitesmoke;
     border: none;
     cursor: pointer;
@@ -266,7 +261,7 @@ section {
     text-decoration: none;
     padding: 5% 5%;
 
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .dropdown ul {
     margin: 0 auto;
@@ -289,8 +284,8 @@ section {
 }
 .dropdown-sub:hover ul{
     position:absolute;
-    left: 260px;
-    top: 100px;
+    left: 180px;
+    top: 50px;
     visibility: visible;
     opacity: 1;
     transition: all 0.5s ease-in;
@@ -298,12 +293,12 @@ section {
     color: whitesmoke;
     text-decoration: none;
     padding: 5% 5%;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .dropdown:hover .content{
     visibility: visible;
     opacity: 1;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
 }
 .dropdown:hover button{
     background-color: blueviolet;
