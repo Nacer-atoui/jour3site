@@ -162,7 +162,8 @@ nav>img {
 .container-image {
     width: 100%;
     background-image: url(../images/montage-categorie-cybersecu-scaled.webp);
-    background-size: contain no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
     color: white;
     padding: 10%;
 }
@@ -255,13 +256,16 @@ nav>img {
     width: 50%;
     padding: 5%;
 }
-#sofiane {
-    border-radius: 50px;
     @media only screen and (max-width: 767px) {
-        width: 144px;
-        height: auto;
+       #sofiane {
+            border-radius: 50px;
+
+            width: 144px;
+            height: auto;
+
     }
 }
+
 
 .link-row {
     display: flex;
@@ -278,7 +282,7 @@ nav>img {
     padding: 5%;
     background: whitesmoke;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     text-decoration: none;
     color: #333;
     height: 700px;
@@ -288,7 +292,7 @@ nav>img {
 .colonne2:hover a{
     transition: all 0.5s ease-out;
     transform: scaleX(1.02) scaleY(1.02);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 .enjeux {
@@ -339,7 +343,7 @@ h1 {
 .overflow {
     overflow: hidden;
 }
-#form-dialog:modal {
+#form-dialog {
     scrollbar-width: none;
     width: 600px;
     height: 800px;
@@ -507,6 +511,46 @@ footer {
 
 }
 
+.faq-section {
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.faq-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.faq-column {
+  flex: 1 1 45%;
+}
+
+.faq-column h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.faq-column p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+}
 
 
 

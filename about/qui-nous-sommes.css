@@ -151,7 +151,9 @@ hr {
 }
 .sous-partie {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
     width: 80%;
     margin: auto auto;
 }
@@ -162,17 +164,16 @@ hr {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-
         gap: 2rem;
-        justify-content: space-around;
         margin: auto auto;
+        justify-content: flex-start;
+        align-items: flex-start;
 
 }
     .contain-flex-column {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: auto auto;
     }
 }
 
@@ -203,7 +204,8 @@ hr {
         align-items: flex-start;
     }
 .from-end {
-        align-items: flex-end;
+        justify-content: flex-end;
+        align-items: flex-end
     }
 .thick {
     max-width: 256px;
@@ -214,8 +216,10 @@ hr {
 }
 
 .logo-certifications {
-    width: 256px;
-    height: 144px;
+    width: 128px;
+    height: 72px;
+    margin: auto auto;
+
 }
 .partenaires-wrap {
     margin:  auto auto;
