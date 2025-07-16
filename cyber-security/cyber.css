@@ -8,9 +8,8 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-    align-items: center;
+    flex-wrap: wrap;
+ 
 }
 
 nav {
@@ -22,10 +21,18 @@ nav {
     padding: 0 2rem;
     box-shadow: rgba(19, 20, 22, 0.4) 0px 10px 10px -10px;
 }
-
-nav>img {
-    color: rgb(0, 98, 255);
+@media only screen and (max-width: 768px)
+{
+    nav img {
+        width: 100%;
+    }
 }
+nav img {
+    width: 80%;
+    color: rgb(0, 98, 255);
+
+}
+
 
 .image-principal {
     width: 400px;
@@ -162,7 +169,7 @@ nav>img {
 .container-image {
     width: 100%;
     background-image: url(../images/montage-categorie-cybersecu-scaled.webp);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     color: white;
     padding: 10%;

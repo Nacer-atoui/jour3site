@@ -13,29 +13,20 @@ header {
     padding: 0;
 
 }
-
-/*petits écrans */
-@media only screen and (max-width: 1000px)
-{
-
-    #logo-tete
-
-    {
-        width: 50%;
-        transition: all 1s ease-in-out;
-
-    }
-
+header img {
+    width: 40%;
 }
+@media only screen and (max-width: 768px)
+{
+header img {
+    width: 100%;
+}
+}
+
 /* grands écrans */
 @media only screen and (min-width: 1000px)
 {
-    #logo-tete 
-    {
-        width: 40%;
-        transition: all 1s ease-in-out;
-
-    }
+   
     .menu {
         display: flex;   
         justify-content: space-around;
