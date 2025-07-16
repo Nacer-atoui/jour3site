@@ -2,13 +2,20 @@
     font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
 }
 
-header {
-    line-height: 23px;
-    font-weight: 500;
-    top: 0;
-    background-color: #fff;
 
+@media screen and (max-width: 980px) {
+    header {
+        /* line-height: 23px; */
+        /* font-weight: 500; */
+        top: 0;
+        background-color: #fff;
+        width: 500px;
+        padding: 5%;
+
+
+    }
 }
+
 
 img {
     max-width: 100%;
@@ -27,11 +34,30 @@ img {
     line-height: 1em;
 }
 
-#presentation {
-    background-image: url(https://laplateforme.io/wp-content/uploads/2022/05/montage-categorie-ia-2-scaled.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
+@media screen and (max-width: 767px) {
 
+
+    #presentation {
+        background-image: url(https://laplateforme.io/wp-content/uploads/2022/05/montage-categorie-ia-2-scaled.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media screen and (min-width: 767px) {
+
+
+    #presentation {
+        background-image: url(https://laplateforme.io/wp-content/uploads/2022/05/montage-categorie-ia-2-scaled.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
 }
 
 .texteimg {
@@ -46,6 +72,15 @@ img {
     padding-top: 8%;
 }
 
+@media screen and (max-width: 767px) {
+    .texteimg {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+}
+
 #information {
     display: flex;
     flex-direction: row;
@@ -54,10 +89,112 @@ img {
     margin: 0 auto;
     height: 250px;
     box-shadow: 0 10px 5px -5px lightgray;
+}
 
+@media screen and (max-width: 767px) {
+    #information {
+        display: flex;
+        flex-wrap: wrap;
+        height: 25%;
+        gap: 50px;
+    }
+
+    #formation {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .lien-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .cdpia {
+        height: 800px;
+    }
+
+    .texteenjeu {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    #titreenjeu {
+        text-align: center;
+
+    }
+
+    .enjeu {
+
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .lesplus {
+        width: auto;
+    }
+
+    footer {
+        display: inline-block;
+        width: 100%;
+        background-color: rgb(31, 31, 31);
+        color: white;
+        padding: 50px 0px;
+
+    }
+
+    #gauche {
+        padding: 5%;
+    }
+
+    .liste-liens {
+        padding: 10%;
+        margin: 2rem auto;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .logo-footer {
+        display: flex;
+        width: 75%;
+    }
 
 
 }
+
+@media only screen and (min-width: 768px) {
+
+    footer {
+        padding: 50px 0px;
+        display: flex;
+        width: 100%;
+        background-color: rgb(31, 31, 31);
+        color: white;
+    }
+
+    .liste-liens {
+        margin: 2rem auto;
+        flex-direction: column;
+
+    }
+
+    .logo-footer {
+        display: flex;
+        width: 30%;
+    }
+
+    #gauche {
+        padding: 5%;
+    }
+
+}
+
 
 span.spn {
     font-weight: bold;
@@ -88,10 +225,13 @@ span.spn {
     font-size: large;
 }
 
+@media screen and (max-width: 767px) {}
+
 .lien-container {
     display: flex;
     flex-direction: row;
-    padding-left: 24%;
+    /* padding-left: 24%; */
+    justify-content: center;
     gap: 50px;
     margin: 0 auto;
 
@@ -195,6 +335,9 @@ span.spn {
 .enjeu {
     background-color: #1c366d;
     position: relative;
+    padding-bottom: 10%;
+
+
 
 }
 
@@ -203,21 +346,23 @@ span.spn {
     font-size: large;
     padding: 5%;
     display: flex;
+    flex-wrap: wrap;
 
 }
 
 .p-enjeu {
-    padding-right: 10%;
+    /* padding-right: 10%; */
     padding-bottom: 10%;
-    width: 40%;
+    width: auto;
+    align-items: center;
     line-height: 1.5em;
 
 }
 
 #titreenjeu {
     font-size: 40px;
-    width: 60%;
-    padding-left: 5%;
+    width: auto;
+    /* padding-left: 5%; */
     line-height: 1.5em;
 
 }
@@ -230,10 +375,9 @@ span.spn {
     font-size: 16px;
     font-weight: 600 !important;
     background-color: #e55615;
-    position: absolute;
-    top: 90%;
-    left: 40%;
     padding: 1em;
+
+
 
 }
 
@@ -246,18 +390,39 @@ span.spn {
 
 .lesplus {
     text-align: center;
-    width: 47%;
+    width: auto;
     margin: auto;
 }
 
 #paraplus {
     font-size: 20px;
     line-height: 1.5em;
-    height: 20px;
+    /* height: 20px; */
+    width: auto;
+    padding-bottom: 10%;
+
 
 }
 
 #titleplus {
     padding: 5%;
     font-size: xx-large;
+}
+
+.bouton {
+    padding: 1% 1%;
+    font-variant: small-caps;
+    border: black solid 4px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    color: white;
+    text-align: center;
+}
+
+.bouton:hover {
+    background-color: rgba(10, 10, 10, 0.8);
+    color: white;
 }
