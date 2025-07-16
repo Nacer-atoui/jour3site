@@ -9,141 +9,108 @@
 </head>
 
 <body>
-    <header>
-     <a href="../page-accueil.html"><img src="../images/logo-laplateforme-2024.png" alt="logo"></a>
-        <div>
-            <div class="dropdown">
-                <button type="button">Qui sommes-nous ?</button>
-                <ul class="content">
-                    <li><a href="/about/qui-nous-sommes.html">Qui sommes nous?</a></li>
-                    <li class="dropdown-sub"><a href="#">Nos écoles</a>
-                        <ul>
-                            <li>Marseille</li>
-                            <li>Lyon</li>
-                            <li>Paris</li>
-                            <li>Brignoles</li>
-                        </ul></li>
-                    <li><a href="#">Ils parlent de nous</a></li>
+    <nav class="shadow">
+        <a href="./page-accueil.html"><img src="../images/logo-laplateforme-2024.png" alt="logo" class="img-logo"></a>
+
+        <ul class="dropdown-container">
+            <li class="dropdown">
+                La Plateforme
+                <ul class="content shadow">
+                    <li><a href="about/qui-nous-sommes.html">Qui sommes nous ?</a></li>
+                    <li><a href="contact/contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </li>
 
-            <div class="dropdown">
-                <button type="button">Extrascolaire</button>
-                <ul class="content">
-                    <li><a class="TUMO Marseille" href="https://laplateforme.io/tumo-marseille/">TUMO Marseille </a>
-                    </li>
-                    <li><a href="#">Cyberpark</a></li>
-                    <li><a href="#">Stage d'été</a></li>
+            <li class="dropdown">
+                Formations
+                <ul class="content shadow">
+                    <li><a href="AI-school/ai-school.html">IA School</a></li>
+                    <li><a href="cyber-security/cyber.html">Cybersécurité</a></li>
+                    <li><a href="coding-school/pcodingschool.html">Coding School</a></li>
                 </ul>
+            </li>
 
-            </div>
-
-            <div class="dropdown">
-                <button type="button">Formation initales / alternance </button>
-                <ul class="content">
-                    <li><a href="#">RE - START -12 MOIS</a></li>
-                    <li><a href="#">BACHELOR IT </a></li>
-                    <li><a href="#">Maste of science </a></li>
-                    <li><a href="#">Post graduate</a></li>
-
+            <li class="dropdown">
+                Atelier &amp; Labs
+                <ul class="content shadow">
+                    <li><a href="#">Inovation Lab</a></li>
                 </ul>
+            </li>
+        </ul>
+    </nav>
 
-            </div>
-
-            <div class="dropdown">
-                <button type="button">Formation continues </button>
-                <ul class="content">
-                    <li><a href="#">IA et Métiers de l'Image</a></li>
-                    <li><a href="#">IA Générative et Productivité </a></li>
-                    <li><a href="#">IA pour le secteur public</a></li>
-
-                </ul>
-
-            </div>
-
-            <div class="dropdown">
-                <button type="button">Atelier &amp; Labs </button>
-                <ul class="content">
-                    <li><a href="#">L`atelier_ </a></li>
-                    <li><a href="#">IA Générative et Productivité</a></li>
-
-                </ul>
-
-            </div>
-        </div>
-    </header>
     <main class="container-principal">
-        <section class="pres">
-            <div class="textelink">
-                <div class="entete">
+        <figure class="presentation">
+            <figcaption class="textelink">
+                <article class="entete">
                     <h1>La grande école du numérique pour tous !</h1>
                     <p>Des parcours de formations d'excellence en informatique aux frais de scolarité
-                        accessibles, ouvert à tous les talents, sans conditions de ressources et de diplômes.
-                    </p>
+                        accessibles, ouvert à tous les talents, sans conditions de ressources et de diplômes.</p>
                     <p>Un lieu de rencontre entre entreprise et apprenants pour le bénéfice de tous !</p>
                     <p>Le digital c'est maintenant !</p>
 
-                    <a class="insc" href="https://laplateforme.io/candidatures-cursus/">TESTS DE SELECTION &amp;
-                        PRE-INSCRIPTIONS</a>
-                </div>
+                    <a class="insc" href="https://laplateforme.io/candidatures-cursus/">
+                        TESTS DE SELECTION &amp; PRE-INSCRIPTIONS
+                    </a>
+                </article>
                 <div class="link-container">
                     <div class="utilelink">
-                        <a class="lienutile" href="#"><img class="icone" src="images/brochure.png" alt=""><span class="lientext" >Telecharger la brochure</span></a>
+                        <a class="lienutile" href="#">
+                            <img class="icone" src="images/brochure.png" alt="icone d'un livre">
+                            <span class="lientext">Telecharger la brochure</span>
+                        </a>
                     </div>
                     <div class="utilelink">
-                        <a class="lienutile" href="#"><img class="icone" src="images/carte.png" alt=""><span class="lientext">Journées portes ouvertes</span></a>
+                        <a class="lienutile" href="#">
+                            <img class="icone" src="images/carte.png" alt="">
+                            <span class="lientext">Journées portes ouvertes</span>
+                        </a>
                     </div>
                     <div class="utilelink">
-                        <a class="lienutile" href="#"><img class="icone" src="images/newsletter.png" alt=""><span class="lientext">S'inscrire à la newsletter</span></a>
+                        <a class="lienutile" href="#">
+                            <img class="icone" src="images/newsletter.png" alt="">
+                            <span class="lientext">S'inscrire à la newsletter</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <img class="imagepres" src="images/picplateforme.jpg" alt="mosaique de personnages">
-        </section>
+            </figcaption>
+            <img class="img-presentation" src="images/picplateforme.jpg" alt="mosaique de personnages">
+        </figure>
     </main>
+    
     <footer>
         <div class="logo liste-liens">
-            <img src="images/Fichier-1.svg" alt="La plateforme"><br>
-            <a id="rejoindre" class="bouton">Rejoingnez nos équipes</a>
-            <a id="telecharger" class="bouton">Télécharger la brochure</a>
+            <img src="images/Fichier-1.svg" alt="La plateforme">
+            <ul>
+                <li><a id="rejoindre" class="bouton">Rejoingnez nos équipes</a></li>
+                <li><a id="telecharger" class="bouton">Télécharger la brochure</a></li>
+            </ul>
         </div>
         <div class="liste-liens">
-            <h3>La Plateforme</h3><br>
-            <a href="page-accueil.html">Accueil</a><br>
-
-            <a href="about/qui-nous-sommes.html">Qui sommes-nous ?</a><br>
-
-            <a href="images/brochure.png">Notre brochure</a><br>
-
-            <a>Ils parlent de nous</a><br>
-
-            <a>News</a><br>
-            <a>Taxe d'apprentissage</a><br>
+            <h2>La Plateforme</h2>
+            <ul>
+                <li><a href="page-accueil.html">Accueil</a></li>
+                <li><a href="about/qui-nous-sommes.html">Qui sommes-nous ?</a></li>
+            </ul>
 
         </div>
         <div class="liste-liens">
-            <h3>Les Formations</h3><br>
-
-            <a>Bachelor IT</a><br>
-
-            <a>Master of Science</a><br>
-
-            <a href="innovation-lab/innovation-lab.html">Innovation Lab</a><br>
-
-            <a href="./coding-school/pcodingschool.html">Développement</a><br>
-
-            <a href="AI-school/ai-school.html">Intelligence Artificielle</a><br>
-
-            <a href="cyber-security/cyber.html">Cybersécurité</a><br>
+            <h2>Les Formations</h2>
+            <ul>
+                <li><a href="innovation-lab/innovation-lab.html">Innovation Lab</a></li>
+                <li><a href="#">Coding school</a></li>
+                <li><a href="AI-school/ai-school.html">Intelligence Artificielle</a></li>
+                <li><a href="cyber-security/cyber.html">Cybersécurité</a></li>
+            </ul>
+            
         </div>
         <div class="liste-liens">
-            <h3>Informations</h3><br>
-
-            <p>8 rue d’hozier, 13002 Marseille</p><br>
-
-            <p>Tel : 04.84.89.43.69</p><br>
-
-            <a class="bouton" href="./contact/contact.html">Contact</a>
+            <h2>Informations</h2>
+            <ul>
+                <li><p>8 rue d’hozier, 13002 Marseille</p></li>
+                <li><p><a href="tel:+33484894369">Tel : 04.84.89.43.69</a></p></li>
+            </ul>
+            <a id="contact" class="bouton" href="./contact/contact.html">Contact</a>
         </div>
     </footer>
 </body>
