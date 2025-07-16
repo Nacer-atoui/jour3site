@@ -10,11 +10,25 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   background-color: white;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid white;
 }
 
 .logo img {
   height: 60px;
+}
+
+
+.nav-links > li > a {
+  background-color: #007bff; /* Azul brillante */
+  color: white;              /* Texto blanco */
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 9999px;     /* Bordes muy redondeados */
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s;
+  white-space: nowrap;
 }
 
 .nav-links {
@@ -29,18 +43,17 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #1a1a1a;
+  color: #0062ff;
   font-weight: 600;
   font-size: 0.9rem;
-
-  
 }
+
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(3, 26, 109);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px #ffffff;
   padding: 0.5rem 0;
   top: 100%;
   left: 0;
