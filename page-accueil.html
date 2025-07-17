@@ -11,10 +11,14 @@
 <body>
     <nav class="shadow">
         <a href="./page-accueil.html"><img src="../images/logo-laplateforme-2024.png" alt="logo" class="img-logo"></a>
-
+        <input type="checkbox" id="menu-toggle">
+        <label class="burger" for="menu-toggle">
+            <span class="bar"></span>
+        </label>
         <ul class="dropdown-container">
             <li class="dropdown">
-                La Plateforme
+                <input type="checkbox" name="sub-menu-plateforme" id="sub-menu-plateforme">
+                <label for="sub-menu-plateforme">La Plateforme</label>
                 <ul class="content shadow">
                     <li><a href="about/qui-nous-sommes.html">Qui sommes nous ?</a></li>
                     <li><a href="contact/contact.html">Contact</a></li>
@@ -22,7 +26,8 @@
             </li>
 
             <li class="dropdown">
-                Formations
+                <input type="checkbox" name="sub-menu-formation" id="sub-menu-formation">
+                <label for="sub-menu-formation">Formations</label>
                 <ul class="content shadow">
                     <li><a href="AI-school/ai-school.html">IA School</a></li>
                     <li><a href="cyber-security/cyber.html">Cybersécurité</a></li>
@@ -31,7 +36,8 @@
             </li>
 
             <li class="dropdown">
-                Atelier &amp; Labs
+                <input type="checkbox" name="sub-menu-atelier" id="sub-menu-atelier">
+                <label for="sub-menu-atelier">Atelier &amp; Labs</label>
                 <ul class="content shadow">
                     <li><a href="#">Inovation Lab</a></li>
                 </ul>
@@ -77,7 +83,7 @@
             <img class="img-presentation" src="images/picplateforme.jpg" alt="mosaique de personnages">
         </figure>
     </main>
-    
+
     <footer>
         <div class="logo liste-liens">
             <img src="images/Fichier-1.svg" alt="La plateforme">
@@ -102,13 +108,17 @@
                 <li><a href="AI-school/ai-school.html">Intelligence Artificielle</a></li>
                 <li><a href="cyber-security/cyber.html">Cybersécurité</a></li>
             </ul>
-            
+
         </div>
         <div class="liste-liens">
             <h2>Informations</h2>
             <ul>
-                <li><p>8 rue d’hozier, 13002 Marseille</p></li>
-                <li><p><a href="tel:+33484894369">Tel : 04.84.89.43.69</a></p></li>
+                <li>
+                    <p>8 rue d’hozier, 13002 Marseille</p>
+                </li>
+                <li>
+                    <p><a href="tel:+33484894369">Tel : 04.84.89.43.69</a></p>
+                </li>
             </ul>
             <a id="contact" class="bouton" href="./contact/contact.html">Contact</a>
         </div>
