@@ -3,6 +3,9 @@ body {
     z-index: 1;
     margin: auto auto;
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.2em;
 
 }
 
@@ -263,17 +266,24 @@ nav img {
     width: 50%;
     padding: 5%;
 }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1080px) {
        #sofiane {
             border-radius: 50px;
 
-            width: 144px;
+            width: 256px;
             height: auto;
 
     }
 }
+@media only screen and (min-width: 768px) {
+       #sofiane {
+            border-radius: 50px;
 
+            width: 400px;
+            height: auto;
 
+    }
+}
 .link-row {
     display: flex;
     flex-wrap: wrap;
@@ -322,7 +332,7 @@ h1 {
     color: white;
     padding: 10px 30px;
     font-size: larger;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .lesplus {
@@ -365,7 +375,7 @@ dialog::backdrop {
 }
 
 .petit {
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 
 fieldset {
@@ -467,6 +477,8 @@ footer {
     margin: 2rem auto;
     flex-direction: column;
     justify-content: space-around;
+    line-height: 2rem;
+
 }
 .logo-footer {
     margin: auto auto;
@@ -503,6 +515,7 @@ footer {
 }
 .liste-liens {
     margin: 2rem auto;
+    line-height: 2rem;
     flex-direction: column;
 
 }
@@ -567,16 +580,19 @@ footer {
     font-size: larger;
     background-color: whitesmoke;
 
-    border-radius: 30px;
+    border-radius: 10px;
 }
 #telecharger {
     color: white;
     padding: 10px 30px;
     font-size: larger;
-    border-radius: 30px;
-
+    border-radius: 10px;
     background-color: red;
 }
 a {
     text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: blue;
 }

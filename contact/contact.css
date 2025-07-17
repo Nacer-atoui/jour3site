@@ -2,6 +2,10 @@ body{
     background-color: white;
     margin: 0;
     overflow-x: hidden;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.2em;
 }
 
 header {
@@ -19,7 +23,7 @@ header img {
 @media only screen and (max-width: 768px)
 {
 header img {
-    width: 100%;
+    width: 50%;
 }
 }
 
@@ -110,6 +114,7 @@ header img {
 }
 .contain-grid {
     display: grid;
+    padding: 5% 10%;
 }
 
 
@@ -193,51 +198,52 @@ fieldset {
    display: grid;
 }
 .container-principal {
-    width: 80%;
+    width: 100%;
     background-color: #0062ff;
-    padding:5% 10%;
+    padding: 0;
 
 }
 /* Pour telephones */
-@media only screen and (max-width:767px)
-{
-    .photo {
-    width: 80%;
-    margin: 2rem auto;
-}
-
-footer {
-    display: inline-block;
-    width: 100%;
-    background-color: rgb(31,31,31);
-    color: white;
-    padding: 50px 0px;
-
-}
-.logo-footer {
-    display: flex;
-    width: 75%;
-}
-
-#gauche {
-    padding: 5%;
-}
-
-.liste-liens {
-    padding: 10%;
-    margin: 2rem auto;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-/* dipsplay:block pour les smartphones */
-.accroche{
-    display: block;
-    padding: 5% 5%;
-    justify-content: center;
-    text-align: justify;
-    margin: auto auto;
+@media only screen and (max-width:915px) {
+        .photo {
+        width: 70%;
+        margin: 2rem auto;
     }
+
+    footer {
+        display: inline-block;
+        width: 100%;
+        background-color: rgb(31,31,31);
+        color: white;
+        padding: 50px 0px;
+
+    }
+    .logo-footer {
+        display: flex;
+        width: 75%;
+    }
+
+    #gauche {
+        padding: 5%;
+    }
+
+    .liste-liens {
+        padding: 10%;
+        line-height: 2em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /* display: block pour les smartphones */
+    .accroche{
+        display: block;
+        padding: 5% 5%;
+        justify-content: center;
+        text-align: justify;
+        margin: auto auto;
+
+        }
 
 }
 
@@ -246,42 +252,45 @@ footer {
 
 
 /* pour ordinateurs */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 915px) {
 
-.photo {
-    width: 100%;
-    margin: 2rem auto;
-}
-    footer {
-    width: 100%;
-    padding: 0px 0px;
-    display: flex;
-    background-color: rgb(31,31,31);
-    color: white;
-}
-.liste-liens {
-    margin: 2rem auto;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.logo-footer {
-    display: flex;
-    width: 30%;
-}
+    .photo {
+        width: 70%;
+        margin: 2rem auto;
+    }
+        footer {
+        width: 100%;
+        padding: 0px 0px;
+        display: flex;
+        background-color: rgb(31,31,31);
+        color: white;
+    }
+    .liste-liens {
+        margin: 2rem auto;
+        line-height: 2em;
 
-#gauche {
-    padding: 5%;
-}
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .logo-footer {
+        display: flex;
+        width: 30%;
+    }
 
-/* flex  */
-.accroche{
+    #gauche {
+        padding: 5%;
+    }
 
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    width: 100%;
-    margin: auto auto;
-}
+    /* flex  */
+    .accroche{
+
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        width: 100%;
+        padding: 1% 0%;
+        margin: auto auto;
+    }
 
 }
 
@@ -327,7 +336,6 @@ label {
 }
 #telecharger {
     color: white;
-    
     background-color: red;
 }
 a {
@@ -456,4 +464,11 @@ select {
 }
 .dropdown a:hover{
     background-color: blueviolet;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: blue;
 }

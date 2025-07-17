@@ -1,15 +1,10 @@
 
-@font-face {
-  font-display: swap;
-  font-family: 'Google Sans Code';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/GoogleSansCode[wght].ttf');
-}
-
 body{
     background-color: white;
     overflow-x:hidden;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.2em;
 
 }
 
@@ -81,6 +76,8 @@ footer {
 .liste-liens {
     padding: 10%;
     margin: 2rem auto;
+    line-height: 1.5em;
+
     flex-direction: column;
     justify-content: space-around;
 }
@@ -107,6 +104,7 @@ footer {
 }
 .liste-liens {
     margin: 2rem auto;
+    line-height: 1.5em;
     flex-direction: column;
 
 }
@@ -123,14 +121,14 @@ footer {
 
 
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: grey;
 }
 
 h1
 {
     color: black;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
 }
 
 h2 {
@@ -172,7 +170,7 @@ hr {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 2rem;
+        gap: 3rem;
         margin: auto auto;
         justify-content: center;
         align-items: flex-start;
@@ -332,4 +330,8 @@ section {
 }
 a {
     text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: blue;
 }
