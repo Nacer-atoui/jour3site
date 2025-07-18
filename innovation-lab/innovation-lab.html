@@ -22,8 +22,8 @@
                 <input type="checkbox" name="sub-menu-plateforme" id="sub-menu-plateforme">
                 <label for="sub-menu-plateforme">La Plateforme</label>
                 <ul class="content shadow">
-                    <li><a href="about/qui-nous-sommes.html">Qui sommes nous ?</a></li>
-                    <li><a href="contact/contact.html">Contact</a></li>
+                    <li><a href="../about/qui-nous-sommes.html">Qui sommes nous ?</a></li>
+                    <li><a href="../contact/contact.html">Contact</a></li>
                 </ul>
             </li>
 
@@ -31,17 +31,9 @@
                 <input type="checkbox" name="sub-menu-formation" id="sub-menu-formation">
                 <label for="sub-menu-formation">Formations</label>
                 <ul class="content shadow">
-                    <li><a href="AI-school/ai-school.html">IA School</a></li>
-                    <li><a href="cyber-security/cyber.html">Cybersécurité</a></li>
-                    <li><a href="coding-school/pcodingschool.html">Coding School</a></li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <input type="checkbox" name="sub-menu-atelier" id="sub-menu-atelier">
-                <label for="sub-menu-atelier">Atelier &amp; Labs</label>
-                <ul class="content shadow">
-                    <li><a href="#">Inovation Lab</a></li>
+                    <li><a href="../AI-school/ai-school.html">IA School</a></li>
+                    <li><a href="../cyber-security/cyber.html">Cybersécurité</a></li>
+                    <li><a href="../coding-school/pcodingschool.html">Coding School</a></li>
                 </ul>
             </li>
         </ul>
@@ -164,7 +156,7 @@
                         <span class="company">Inovation Lab "Habiter demain"</span>
                     </div>
                     <div class="arrows">
-                        <a href="#slide2"><i class="fa-solid fa-arrow-right"></i></a>
+                        <button data-target="slide2"><i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
             </article>
@@ -181,13 +173,13 @@
                 </span><br>
                 <div class="carousel-nav">
                     <div>
-                    <span class="user">Mathilde</span><br>
-                    <span class="company">Inovation Lab "Habiter demain"</span>
-                </div>
-                <div class="arrows">
-                    <a href=""><i class="fa-solid fa-arrow-left"></i></a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
+                        <span class="user">Mathilde</span><br>
+                        <span class="company">Inovation Lab "Habiter demain"</span>
+                    </div>
+                    <div class="arrows">
+                        <button data-target="slide1"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button data-target="slide3"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
                 </div>
             </article>
             <article id="slide3">
@@ -202,13 +194,15 @@
                     remettre des mots sur mes compétences après une reconversion professionnelle
                     <i class="fa-solid fa-angles-right"></i>
                 </span><br>
-                <div>
-                    <span class="user">Marion</span><br>
-                    <span class="company">Inovation Lab "Habiter demain"</span>
-                </div>
-                <div class="arrows">
-                    <a href=""><i class="fa-solid fa-arrow-left"></i></a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                <div class="carousel-nav">
+                    <div>
+                        <span class="user">Marion</span><br>
+                        <span class="company">Inovation Lab "Habiter demain"</span>
+                    </div>
+                    <div class="arrows">
+                        <button data-target="slide2"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button data-target="slide4"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
                 </div>
             </article>
             <article id="slide4">
@@ -219,13 +213,14 @@
                     travail de designer, ce n’était pas ma façon de faire avant
                     <i class="fa-solid fa-angles-right"></i>
                 </span><br>
-                <div class="author">
-                    <span class="user">Alban</span><br>
-                    <span class="company">Inovation Lab "Habiter demain"</span>
-                </div>
-                <div class="arrows">
-                    <a href=""><i class="fa-solid fa-arrow-left"></i></a>
-                    <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                <div class="carousel-nav">
+                    <div class="author">
+                        <span class="user">Alban</span><br>
+                        <span class="company">Inovation Lab "Habiter demain"</span>
+                    </div>
+                    <div class="arrows">
+                        <button data-target="slide3"><i class="fa-solid fa-arrow-left"></i></button>
+                    </div>
                 </div>
             </article>
         </div>
@@ -263,48 +258,59 @@
             </figure>
         </div>
     </section>
-    <footer class="grid-4">
-        <figure>
-            <img src="https://laplateforme.io/wp-content/uploads/2024/02/Fichier-1.svg" alt="">
-            <figcaption>
-                <a href="https://recrutement.laplateforme.io/" class="btn join">Rejoignez nos équipes<i
-                        class="fa-solid fa-chevron-right"></i></a>
-                <a href="https://laplateforme.io/telechargement-brochure/" class="btn download">Télécharger la
-                    brochure</a>
-            </figcaption>
-        </figure>
-        <article class="nav-footer">
-            <b>La Plateforme</b>
+    <footer>
+        <div class="logo liste-liens">
+            <a href="../page-accueil.html"><img src="../images/Fichier-1.svg" alt="La plateforme"></a>
             <ul>
-                <li><a href="../page-accueil.html">Acceuil</a></li>
-                <li><a href="../qui-nous-sommes.html">Qui sommes-nous ?</a></li>
-                <li><a href="https://laplateforme.io/telechargement-brochure/">Notre brochure</a></li>
-                <li><a href="https://laplateforme.io/lls-parlent-de-nous/">Ils parlent de nous</a></li>
-                <li><a href="https://laplateforme.io/news/">News</a></li>
-                <li><a href="https://laplateforme.io/entreprise/taxe-apprentissage/">Taxe d'apprentissage</a></li>
+                <li><a id="rejoindre" class="bouton">Rejoingnez nos équipes</a></li>
+                <li><a id="telecharger" class="bouton">Télécharger la brochure</a></li>
             </ul>
-        </article>
-        <article class="nav-footer">
-            <b>Les formations</b>
+        </div>
+        <div class="liste-liens">
+            <h2>La Plateforme</h2>
             <ul>
-                <li><a href="https://laplateforme.io/bachelor-it//">Bachelor IT</a></li>
-                <li><a href="https://laplateforme.io/master-of-science/">Master of Science</a></li>
-                <li><a href="innovation-lab.html">Innovation Lab</a></li>
-                <li><a href="../coding-school/pcodingschool.html">Développement</a></li>
-                <li><a href="../AI -school/ai-school.html">Intelligence Artificielle</a></li>
+                <li><a href="../page-accueil.html">Accueil</a></li>
+                <li><a href="../about/qui-nous-sommes.html">Qui sommes-nous ?</a></li>
+            </ul>
+
+        </div>
+        <div class="liste-liens">
+            <h2>Les Formations</h2>
+            <ul>
+                <li><a href="../coding-school/pcodingschool.html">Coding school</a></li>
+                <li><a href="../AI-school/ai-school.html">Intelligence Artificielle</a></li>
                 <li><a href="../cyber-security/cyber.html">Cybersécurité</a></li>
             </ul>
-        </article>
-        <article class="information">
-            <b>Information</b>
+
+        </div>
+        <div class="liste-liens">
+            <h2>Informations</h2>
             <ul>
-                <li><span>8 rue d'hozier</span><br><span>Marseille</span></li>
-                <li><a href="tel:+33484894369">Tel&nbsp;:&nbsp;04.84.89.43.69</a></li>
+                <li>
+                    <p>8 rue d’hozier, 13002 Marseille</p>
+                </li>
+                <li>
+                    <p><a href="tel:+33484894369">Tel : 04.84.89.43.69</a></p>
+                </li>
             </ul>
-            <a href="../contact/contact.html" class="btn">CONTACT</a>
-        </article>
+            <a id="contact" class="bouton" href="../contact/contact.html">Contact</a>
+        </div>
     </footer>
+
     <script src="https://kit.fontawesome.com/cf618d8113.js" crossorigin="anonymous"></script>
+    <script>
+        const links = document.querySelectorAll(".arrows button");
+        links.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = link.dataset.target;
+                const slide = document.getElementById(target);
+    
+                console.log(slide)
+                slide.scrollIntoView({ behavior: "smooth", block: "center" });
+            })
+        })
+    </script>
 </body>
 
 </html>
