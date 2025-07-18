@@ -11,33 +11,40 @@
 </head>
 
 <body>
-    <nav>
-        <img src="../images/logo-laplateforme-2024.png" alt="Logo Laplateforme" width="300" height="50">
+    <nav class="shadow">
+        <a href="../page-accueil.html"><img src="../images/logo-laplateforme-2024.png" alt="logo" class="img-logo"></a>
         <input type="checkbox" id="menu-toggle">
         <label class="burger" for="menu-toggle">
             <span class="bar"></span>
         </label>
-        <div class="dropdown">
-            <ul>
-                <li>
-                    <a href="#"> sommes-nous ?<span class="chevron"><i class="fa-solid fa-chevron-right"></i></span></a>
-                </li>
-                <li>
-                    <a href="#">Extrascolaire<span class="chevron"><i class="fa-solid fa-chevron-right"></i></span></a>
-                </li>
-                <li>
-                    <a href="#">Formations initiales / alternance<span class="chevron">
-                        <i class="fa-solid fa-chevron-right"></i></span>
-                    </a></li>
-                <li>
-                    <a href="#">Formations continues<span class="chevron"><i
-                                class="fa-solid fa-chevron-right">
-                            </i></span></a></li>
-                <li><a href="#">Atelier &amp; Labs<span class="chevron"><i
-                                class="fa-solid fa-chevron-right"></i></span></a>
-                </li>
-            </ul>
-        </div>
+        <ul class="dropdown-container">
+            <li class="dropdown">
+                <input type="checkbox" name="sub-menu-plateforme" id="sub-menu-plateforme">
+                <label for="sub-menu-plateforme">La Plateforme</label>
+                <ul class="content shadow">
+                    <li><a href="about/qui-nous-sommes.html">Qui sommes nous ?</a></li>
+                    <li><a href="contact/contact.html">Contact</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <input type="checkbox" name="sub-menu-formation" id="sub-menu-formation">
+                <label for="sub-menu-formation">Formations</label>
+                <ul class="content shadow">
+                    <li><a href="AI-school/ai-school.html">IA School</a></li>
+                    <li><a href="cyber-security/cyber.html">Cybersécurité</a></li>
+                    <li><a href="coding-school/pcodingschool.html">Coding School</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <input type="checkbox" name="sub-menu-atelier" id="sub-menu-atelier">
+                <label for="sub-menu-atelier">Atelier &amp; Labs</label>
+                <ul class="content shadow">
+                    <li><a href="#">Inovation Lab</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
     <header>
         <h1>Innovation Lab</h1>
@@ -47,10 +54,10 @@
         </div>
         <a href="#" class="btn"><i class="fa-solid fa-chevron-down"></i>Nos formations</a>
     </header>
-    <section>
+    <div class="wallpaper">
         <img src="https://laplateforme.io/wp-content/uploads/2022/12/IL-img-accueil.webp"
             alt="Etudiante Laplateforme en action" width="300" height="300">
-    </section>
+    </div>
     <section class="concept">
         <h2>Concept de l’Innovation Lab</h2>
         <p>L’Innovation Lab est une formation à l’innovation responsable par le design</p>
@@ -141,6 +148,7 @@
         <h2>Ils témoignent :</h2>
         <div class="slider">
             <article id="slide1">
+                <h3></h3>
                 <span class="comment">
                     <i class="fa-solid fa-angles-left"></i>
                     Le lab a accéléré les rencontres avec des
@@ -150,12 +158,18 @@
                     formidable opportinité de réseaux.
                     <i class="fa-solid fa-angles-right"></i>
                 </span><br>
-                <div>
-                    <span class="user">Antoine</span><br>
-                    <span class="company">Inovation Lab "Habiter demain"</span>
+                <div class="carousel-nav">
+                    <div>
+                        <span class="user">Antoine</span><br>
+                        <span class="company">Inovation Lab "Habiter demain"</span>
+                    </div>
+                    <div class="arrows">
+                        <a href="#slide2"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </article>
             <article id="slide2">
+                <h3></h3>
                 <span class="comment">
                     <i class="fa-solid fa-angles-left"></i>
                     Le lab, c'était un excellent moment de
@@ -165,12 +179,19 @@
                     trouvé des outils pour compléter ma méthodologie et une façon de poser ma réflexion.
                     <i class="fa-solid fa-angles-right"></i>
                 </span><br>
-                <div>
+                <div class="carousel-nav">
+                    <div>
                     <span class="user">Mathilde</span><br>
                     <span class="company">Inovation Lab "Habiter demain"</span>
                 </div>
+                <div class="arrows">
+                    <a href=""><i class="fa-solid fa-arrow-left"></i></a>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                </div>
             </article>
             <article id="slide3">
+                <h3></h3>
                 <span class="comment">
                     <i class="fa-solid fa-angles-left"></i>
                     Le lab m’a redonné une très confiance en ma
@@ -185,8 +206,13 @@
                     <span class="user">Marion</span><br>
                     <span class="company">Inovation Lab "Habiter demain"</span>
                 </div>
+                <div class="arrows">
+                    <a href=""><i class="fa-solid fa-arrow-left"></i></a>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </article>
             <article id="slide4">
+                <h3></h3>
                 <span class="comment">
                     <i class="fa-solid fa-angles-left"></i>
                     Grâce au lab Habiter demain, j’ai appris des techniques concrètes pour intégrer les usagers dans mon
@@ -197,13 +223,11 @@
                     <span class="user">Alban</span><br>
                     <span class="company">Inovation Lab "Habiter demain"</span>
                 </div>
+                <div class="arrows">
+                    <a href=""><i class="fa-solid fa-arrow-left"></i></a>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </article>
-        </div>
-        <div class="dots">
-            <span href="#slide1" class="dot" id="dot1"></span>
-            <span href="#slide2" class="dot" id="dot2"></span>
-            <span href="#slide3" class="dot" id="dot3"></span>
-            <span href="#slide4" class="dot" id="dot4"></span>
         </div>
     </section>
     <section class="carousel">
@@ -237,11 +261,6 @@
                             class="fa-brands fa-linkedin-in"></i></a>
                 </figcaption>
             </figure>
-        </div>
-        <div class="dots">
-            <a href="#slide5" class="dot" id="dot5"></a>
-            <a href="#slide6" class="dot" id="dot6"></a>
-            <a href="#slide7" class="dot" id="dot7"></a>
         </div>
     </section>
     <footer class="grid-4">
@@ -286,27 +305,6 @@
         </article>
     </footer>
     <script src="https://kit.fontawesome.com/cf618d8113.js" crossorigin="anonymous"></script>
-    <script>
-        const slider = document.querySelector(".slider");
-        const dots = document.querySelectorAll(".dot");
-        const articles = document.querySelectorAll(".slider article");
-        const totalSlides = articles.length;
-
-        let currentIndex = 0;
-
-        function goToSlide(index) {
-            const offset = articles[index].offsetLeft;
-            slider.scrollTo({ left: offset, behavior: 'smooth' });
-
-            dots.forEach(dot => dot.style.background = "#bbb");
-            if (dots[index]) dots[index].style.background = "black";
-        }
-
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            goToSlide(currentIndex);
-        }, 5000);
-    </script>
 </body>
 
 </html>
